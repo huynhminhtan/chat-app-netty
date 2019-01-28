@@ -7,6 +7,7 @@ import org.jboss.netty.buffer.ChannelBuffer;
 import org.jboss.netty.channel.ChannelHandlerContext;
 import org.jboss.netty.handler.codec.http.HttpRequest;
 import org.jboss.netty.util.CharsetUtil;
+import org.redisson.api.RMap;
 import server.modules.LoginResponseDTO;
 import server.modules.UserDTO;
 import server.utilities.HttpHelper;
@@ -16,25 +17,22 @@ public class Register {
 
     public static void handleRegister(ChannelHandlerContext context, HttpRequest request, Logger logger) {
         ChannelBuffer buffer = request.getContent();
-
         String jsonPayload = buffer.toString(CharsetUtil.UTF_8);
 
-        Gson gson = new Gson();
+        Gson gson = new GsonBuilder().serializeNulls().create();
         UserDTO user = gson.fromJson(jsonPayload, UserDTO.class);
 
-        System.out.println(user.getPassword());
-        System.out.println(user.getPhone());
-        System.out.println(user.getUserName());
+        RMap<Object, Object> userDTORMap =  RedissonHelper.redisMap("USERS");
 
-        // account not exists
-        if (!RedissonHelper.isExists(user.getPhone())) {
+       // account not exists
+        if (!userDTORMap.containsKey(user.getPhone())) {
 
             // save to redis
-            RedissonHelper.set(user.getPhone(), user);
+            userDTORMap.put(user.getPhone(), user);
 
             // response
-            // get user from redis
-            UserDTO userLogin = (UserDTO) RedissonHelper.get(user.getPhone());
+            // getRBucket user from redis
+            UserDTO userLogin = (UserDTO) userDTORMap.get(user.getPhone());
 
             LoginResponseDTO loginResponseDTO = new LoginResponseDTO("success", new UserDTO(
                     userLogin.getUserName(), userLogin.getPhone()));

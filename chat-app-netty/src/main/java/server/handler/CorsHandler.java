@@ -50,7 +50,7 @@
 //    }
 //
 //    private boolean setOrigin(final HttpResponse response) {
-//        final String origin = request.headers().get(ORIGIN);
+//        final String origin = request.headers().getRBucket(ORIGIN);
 //        if (origin != null) {
 //            if ("null".equals(origin) && config.isNullOriginAllowed()) {
 //                setAnyOrigin(response);
@@ -79,7 +79,7 @@
 //            return true;
 //        }
 //
-//        final String origin = request.headers().get(ORIGIN);
+//        final String origin = request.headers().getRBucket(ORIGIN);
 //        if (origin == null) {
 //            // Not a CORS request so we cannot validate it. It may be a non CORS
 //            // request.
@@ -94,7 +94,7 @@
 //    }
 //
 //    private void echoRequestOrigin(final HttpResponse response) {
-//        setOrigin(response, request.headers().get(ORIGIN));
+//        setOrigin(response, request.headers().getRBucket(ORIGIN));
 //    }
 //
 //    private static void setVaryHeader(final HttpResponse response) {
@@ -108,7 +108,7 @@
 //
 //    private static void setOrigin(final HttpResponse response,
 //                                  final String origin) {
-//        response.headers().set(ACCESS_CONTROL_ALLOW_ORIGIN, origin);
+//        response.headers().setRBucket(ACCESS_CONTROL_ALLOW_ORIGIN, origin);
 //    }
 //
 //    private void setAllowCredentials(final HttpResponse response) {
@@ -203,14 +203,14 @@
 //    public void handleDownstream(ChannelHandlerContext ctx, ChannelEvent event)
 //            throws Exception {
 //
-//        final String origin = request.headers().get(ORIGIN);
+//        final String origin = request.headers().getRBucket(ORIGIN);
 //        if (origin != null) {
 //            if (event != null && event instanceof DownstreamMessageEvent) {
 //                DownstreamMessageEvent mEvent = (DownstreamMessageEvent) event;
 //
 //                HttpResponse rsp = (HttpResponse) mEvent.getMessage();
 //
-//                rsp.headers().set(ACCESS_CONTROL_ALLOW_ORIGIN, config.origin());
+//                rsp.headers().setRBucket(ACCESS_CONTROL_ALLOW_ORIGIN, config.origin());
 //            }
 //        }
 //        super.handleDownstream(ctx, event);

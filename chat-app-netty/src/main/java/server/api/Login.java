@@ -12,6 +12,7 @@ import org.jboss.netty.handler.codec.http.HttpRequest;
 import org.jboss.netty.handler.codec.http.HttpResponse;
 import org.jboss.netty.util.CharsetUtil;
 import org.redisson.Redisson;
+import org.redisson.api.RMap;
 import org.redisson.api.RMapCache;
 import org.redisson.api.RedissonClient;
 import protobuf.MsgRequest;
@@ -181,8 +182,11 @@ public class Login {
 //            System.out.println(e.getMessage());
 //        }
 
+        RMap<Object, Object> userDTORMap =  RedissonHelper.redisMap("USERS");
+
+
         // handle phone not exists
-        if (!RedissonHelper.isExists(user.getPhone())) {
+        if (!userDTORMap.containsKey(user.getPhone())) {
 
             // build gson
             loginResponseDTO = new LoginResponseDTO("phone-not-exists", null);
@@ -194,12 +198,7 @@ public class Login {
         }
 
         // handle phone exists
-        UserDTO userLogin = (UserDTO) RedissonHelper.get(user.getPhone());
-
-        System.out.println("iser");
-
-        System.out.println(userLogin.getPassword());
-        System.out.println(user.getPassword());
+        UserDTO userLogin = (UserDTO) userDTORMap.get(user.getPhone());
 
         if (userLogin.getPassword().equals(user.getPassword())) {
 

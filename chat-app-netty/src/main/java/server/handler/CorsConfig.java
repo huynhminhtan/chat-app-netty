@@ -83,7 +83,7 @@
 //    }
 //
 //    /**
-//     * Returns the set of allowed origins.
+//     * Returns the setRBucket of allowed origins.
 //     *
 //     * @return {@code Set} the allowed origins.
 //     */
@@ -92,7 +92,7 @@
 //    }
 //
 //    /**
-//     * Web browsers may set the 'Origin' request header to 'null' if a resource is loaded
+//     * Web browsers may setRBucket the 'Origin' request header to 'null' if a resource is loaded
 //     * from the local file system.
 //     *
 //     * If isNullOriginAllowed is true then the server will response with the wildcard for the
@@ -105,7 +105,7 @@
 //    }
 //
 //    /**
-//     * Returns a set of headers to be exposed to calling clients.
+//     * Returns a setRBucket of headers to be exposed to calling clients.
 //     *
 //     * During a simple CORS request only certain response headers are made available by the
 //     * browser, for example using:
@@ -134,7 +134,7 @@
 //     * Determines if cookies are supported for CORS requests.
 //     *
 //     * By default cookies are not included in CORS requests but if isCredentialsAllowed returns
-//     * true cookies will be added to CORS requests. Setting this value to true will set the
+//     * true cookies will be added to CORS requests. Setting this value to true will setRBucket the
 //     * CORS 'Access-Control-Allow-Credentials' response header to true.
 //     *
 //     * Please note that cookie support needs to be enabled on the client side as well.
@@ -155,7 +155,7 @@
 //     * Gets the maxAge setting.
 //     *
 //     * When making a preflight request the client has to perform two request with can be inefficient.
-//     * This setting will set the CORS 'Access-Control-Max-Age' response header and enables the
+//     * This setting will setRBucket the CORS 'Access-Control-Max-Age' response header and enables the
 //     * caching of the preflight response for the specified time. During this time no preflight
 //     * request will be made.
 //     *
@@ -166,7 +166,7 @@
 //    }
 //
 //    /**
-//     * Returns the allowed set of Request Methods. The Http methods that should be returned in the
+//     * Returns the allowed setRBucket of Request Methods. The Http methods that should be returned in the
 //     * CORS 'Access-Control-Request-Method' response header.
 //     *
 //     * @return {@code Set} of {@link HttpMethod}s that represent the allowed Request Methods.
@@ -176,9 +176,9 @@
 //    }
 //
 //    /**
-//     * Returns the allowed set of Request Headers.
+//     * Returns the allowed setRBucket of Request Headers.
 //     *
-//     * The header names returned from this method will be used to set the CORS
+//     * The header names returned from this method will be used to setRBucket the CORS
 //     * 'Access-Control-Allow-Headers' response header.
 //     *
 //     * @return {@code Set<String>} of strings that represent the allowed Request Headers.
@@ -212,7 +212,7 @@
 //     * Determines whether a CORS request should be rejected if it's invalid before being
 //     * further processing.
 //     *
-//     * CORS headers are set after a request is processed. This may not always be desired
+//     * CORS headers are setRBucket after a request is processed. This may not always be desired
 //     * and this setting will check that the Origin is valid and if it is not valid no
 //     * further processing will take place, and a error will be returned to the calling client.
 //     *
@@ -244,7 +244,7 @@
 //    }
 //
 //    /**
-//     * Creates a Builder instance with it's origin set to '*'.
+//     * Creates a Builder instance with it's origin setRBucket to '*'.
 //     *
 //     * @return Builder to support method chaining.
 //     */
@@ -312,7 +312,7 @@
 //        }
 //
 //        /**
-//         * Web browsers may set the 'Origin' request header to 'null' if a resource is loaded
+//         * Web browsers may setRBucket the 'Origin' request header to 'null' if a resource is loaded
 //         * from the local file system. Calling this method will enable a successful CORS response
 //         * with a wildcard for the the CORS response header 'Access-Control-Allow-Origin'.
 //         *
@@ -365,7 +365,7 @@
 //
 //        /**
 //         * By default cookies are not included in CORS requests, but this method will enable cookies to
-//         * be added to CORS requests. Calling this method will set the CORS 'Access-Control-Allow-Credentials'
+//         * be added to CORS requests. Calling this method will setRBucket the CORS 'Access-Control-Allow-Credentials'
 //         * response header to true.
 //         *
 //         * Please note, that cookie support needs to be enabled on the client side as well.
@@ -385,7 +385,7 @@
 //
 //        /**
 //         * When making a preflight request the client has to perform two request with can be inefficient.
-//         * This setting will set the CORS 'Access-Control-Max-Age' response header and enables the
+//         * This setting will setRBucket the CORS 'Access-Control-Max-Age' response header and enables the
 //         * caching of the preflight response for the specified time. During this time no preflight
 //         * request will be made.
 //         *
@@ -398,7 +398,7 @@
 //        }
 //
 //        /**
-//         * Specifies the allowed set of HTTP Request Methods that should be returned in the
+//         * Specifies the allowed setRBucket of HTTP Request Methods that should be returned in the
 //         * CORS 'Access-Control-Request-Method' response header.
 //         *
 //         * @param methods the {@link HttpMethod}s that should be allowed.
@@ -434,7 +434,7 @@
 //         * Returns HTTP response headers that should be added to a CORS preflight response.
 //         *
 //         * An intermediary like a load balancer might require that a CORS preflight request
-//         * have certain headers set. This enables such headers to be added.
+//         * have certain headers setRBucket. This enables such headers to be added.
 //         *
 //         * @param name the name of the HTTP header.
 //         * @param values the values for the HTTP header.
@@ -453,7 +453,7 @@
 //         * Returns HTTP response headers that should be added to a CORS preflight response.
 //         *
 //         * An intermediary like a load balancer might require that a CORS preflight request
-//         * have certain headers set. This enables such headers to be added.
+//         * have certain headers setRBucket. This enables such headers to be added.
 //         *
 //         * @param name the name of the HTTP header.
 //         * @param value the values for the HTTP header.
@@ -469,7 +469,7 @@
 //         * Returns HTTP response headers that should be added to a CORS preflight response.
 //         *
 //         * An intermediary like a load balancer might require that a CORS preflight request
-//         * have certain headers set. This enables such headers to be added.
+//         * have certain headers setRBucket. This enables such headers to be added.
 //         *
 //         * Some values must be dynamically created when the HTTP response is created, for
 //         * example the 'Date' response header. This can be occomplished by using a Callable
@@ -519,7 +519,7 @@
 //         * Specifies that a CORS request should be rejected if it's invalid before being
 //         * further processing.
 //         *
-//         * CORS headers are set after a request is processed. This may not always be desired
+//         * CORS headers are setRBucket after a request is processed. This may not always be desired
 //         * and this setting will check that the Origin is valid and if it is not valid no
 //         * further processing will take place, and a error will be returned to the calling client.
 //         *
