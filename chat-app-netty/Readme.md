@@ -34,3 +34,23 @@ re / login success
 {"status":"success","content":{"userName":"mtSiniChi","password":"1234567","phone":"0999888774"}}
 
 ```
+
+### Register
+
+```
+http://localhost:6898/register
+
+req
+{
+        userName:"mtSiniChi",
+        password: "1234567",
+        phone: "0999888773"
+}
+
+re / phone is exists
+{"status":"isExists","content":null}
+
+re / register sucess
+{"status":"success","content":{"userName":"mtSiniChi","password":null,"phone":"0999888775"}}
+
+```

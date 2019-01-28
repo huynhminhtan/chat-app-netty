@@ -9979,3 +9979,13 @@
 2019-01-28 10:17:02,829 +0700 [New I/O  worker #3] INFO  (WebSocketServerHandler.java:212) - Register sd:sds
 2019-01-28 10:17:02,829 +0700 [New I/O  worker #3] INFO  (WebSocketServerHandler.java:223) - Register Event: sd :1283980865
 2019-01-28 10:17:02,829 +0700 [New I/O  worker #3] INFO  (WebSocketServerHandler.java:269) - Broadcast message in conversation sds
+2019-01-28 10:17:53,172 +0700 [New I/O  worker #3] INFO  (WebSocketServerHandler.java:69) - Entry connect socket
+2019-01-28 10:17:53,172 +0700 [New I/O  worker #3] INFO  (WebSocketServerHandler.java:175) - Handle websocket
+2019-01-28 10:17:53,172 +0700 [New I/O  worker #3] INFO  (WebSocketServerHandler.java:180) - Disconnected: sd
+2019-01-28 10:17:53,173 +0700 [New I/O  worker #3] INFO  (WebSocketServerHandler.java:269) - Broadcast message in conversation sds
+2019-01-28 10:17:54,970 +0700 [New I/O  worker #5] INFO  (WebSocketServerHandler.java:65) - Entry connect HTTP request
+2019-01-28 10:17:55,165 +0700 [New I/O  worker #6] INFO  (WebSocketServerHandler.java:65) - Entry connect HTTP request
+2019-01-28 10:17:55,167 +0700 [New I/O  worker #7] INFO  (WebSocketServerHandler.java:65) - Entry connect HTTP request
+2019-01-28 10:17:55,170 +0700 [New I/O  worker #8] INFO  (WebSocketServerHandler.java:65) - Entry connect HTTP request
+2019-01-28 10:21:50,926 +0700 [New I/O  worker #1] INFO  (WebSocketServerHandler.java:65) - Entry connect HTTP request
+2019-01-28 10:22:58,436 +0700 [New I/O  worker #2] INFO  (WebSocketServerHandler.java:65) - Entry connect HTTP request
