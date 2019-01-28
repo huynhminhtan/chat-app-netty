@@ -75,7 +75,7 @@ public class Login {
         listConversationsSend.addAllListConversations(staticListConverstation);
 
 
-        ChannelBuffer bufferRe1 =  ChannelBuffers.copiedBuffer(listConversationsSend.build().toByteArray());
+        ChannelBuffer bufferRe1 = ChannelBuffers.copiedBuffer(listConversationsSend.build().toByteArray());
         setContentLength(res, bufferRe1.readableBytes());
         res.setContent(bufferRe1);
 
@@ -131,7 +131,7 @@ public class Login {
         MsgResponse.ListMessages.Builder listConversationsRes = MsgResponse.ListMessages.newBuilder();
         listConversationsRes.addAllListMessages(listMessages);
 
-        ChannelBuffer bufferRes =  ChannelBuffers.copiedBuffer(listConversationsRes.build().toByteArray());
+        ChannelBuffer bufferRes = ChannelBuffers.copiedBuffer(listConversationsRes.build().toByteArray());
         setContentLength(res, bufferRes.readableBytes());
         res.setContent(bufferRes);
 
@@ -145,12 +145,10 @@ public class Login {
     }
 
     /**
-     *
-     *
      * {
-     * 	"userName":"mtSiniChi",
-     * 	"passworld": "1234567",
-     * 	"phone": "0999888987"
+     * "userName":"mtSiniChi",
+     * "passworld": "1234567",
+     * "phone": "0999888987"
      * }
      *
      * @param context
@@ -160,66 +158,67 @@ public class Login {
 
 
     public static void handleLogin(ChannelHandlerContext context, HttpRequest request, Logger logger) {
-        ChannelBuffer buffer = request.getContent();
+        Gson gson = new GsonBuilder().serializeNulls().create();
+        String resContent;
+        LoginResponseDTO loginResponseDTO;
 
+        ChannelBuffer buffer = request.getContent();
         String jsonPayload = buffer.toString(CharsetUtil.UTF_8);
 
-        Gson gson = new Gson();
         UserDTO user = gson.fromJson(jsonPayload, UserDTO.class);
-
-//        System.out.println(user.getPassword());
+//
+//
 //        System.out.println(user.getPhone());
-//        System.out.println(user.getUserName());
+//        System.out.println(user.getPassword());
 
-//        RedissonHelper.set("0999888771", new UserDTO("mtSiniChi", "123456", "0999888771"));
+//        try {
+//            //  Block of code to try
+//            System.out.println(user.getUserName());
+//
+//        }
+//        catch(Exception e) {
+//            //  Block of code to handle errors
+//            System.out.println(e.getMessage());
+//        }
 
-        // handle fail login
-        if (!RedissonHelper.isExists(user.getPhone())){
+        // handle phone not exists
+        if (!RedissonHelper.isExists(user.getPhone())) {
 
             // build gson
-            gson = new GsonBuilder().serializeNulls().create();
-            LoginResponseDTO loginResponseDTO = new LoginResponseDTO("fail", null);
-            String resContent = gson.toJson(loginResponseDTO);
+            loginResponseDTO = new LoginResponseDTO("phone-not-exists", null);
+            resContent = gson.toJson(loginResponseDTO);
 
             // response to client
             HttpHelper.sendHttpResponse(context, request, resContent);
             return;
         }
 
-        // handle success login
+        // handle phone exists
         UserDTO userLogin = (UserDTO) RedissonHelper.get(user.getPhone());
 
-        LoginResponseDTO loginResponseDTO = new LoginResponseDTO("success", userLogin);
-        String resContent = gson.toJson(loginResponseDTO);
+        System.out.println("iser");
+
+        System.out.println(userLogin.getPassword());
+        System.out.println(user.getPassword());
+
+        if (userLogin.getPassword().equals(user.getPassword())) {
+
+            // login successful
+            loginResponseDTO = new LoginResponseDTO("success", userLogin);
+            resContent = gson.toJson(loginResponseDTO);
+
+            // response to client
+            HttpHelper.sendHttpResponse(context, request, resContent);
+            return;
+        }
+
+        // password match
+        loginResponseDTO = new LoginResponseDTO("password-not-match", null);
+        resContent = gson.toJson(loginResponseDTO);
 
         // response to client
         HttpHelper.sendHttpResponse(context, request, resContent);
         return;
-
-//        System.out.println("xxxxxxxxxxxqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq");
-//
-//        UserDTO ob = (UserDTO) RedissonHelper.get("0999888771");
-//        System.out.println(ob.getPassword());
-//        System.out.println(ob.getPhone());
-//        System.out.println(ob.getUserName());
-
-//        System.out.println(jsonPayload);
-
-
-
-
-
-//        //  create response
-//        HttpResponse res = new DefaultHttpResponse(HTTP_1_1, OK);
-//
-//        res.setHeader(CONTENT_TYPE, "text/html; charset=UTF-8");
-//        HttpHelper.setOrigin(res);
-//        String ns = "okay";
-//        ChannelBuffer bufferRes =  ChannelBuffers.copiedBuffer(ns.getBytes());
-//        setContentLength(res, bufferRes.readableBytes());
-//        res.setContent(bufferRes);
-//
-//        HttpHelper.sendHttpResponse(context, request, res);
 
     }
 }

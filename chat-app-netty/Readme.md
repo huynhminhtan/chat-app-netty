@@ -9,3 +9,28 @@
 
 
 - netty-rest *** / CORS: https://github.com/yjmyzz/netty-rest
+
+
+## API
+
+### Login
+
+```
+http://localhost:6898/login
+
+req
+{
+	"password": "1234567",
+	"phone": "0999888771"
+}
+
+re / password not match
+{"status":"password-not-match","content":null}
+
+re / phone not exists
+{"status":"phone-not-exists","content":null}
+
+re / login success
+{"status":"success","content":{"userName":"mtSiniChi","password":"1234567","phone":"0999888774"}}
+
+```
