@@ -10612,3 +10612,422 @@
 2019-01-28 11:47:58,603 +0700 [New I/O  worker #6] INFO  (WebSocketServerHandler.java:223) - Register Event: Akisstan :1574153857
 2019-01-28 11:47:58,604 +0700 [New I/O  worker #6] INFO  (WebSocketServerHandler.java:269) - Broadcast message in conversation Uyển Vy
 2019-01-28 11:48:00,388 +0700 [New I/O  worker #7] INFO  (WebSocketServerHandler.java:65) - Entry connect HTTP request
+2019-01-28 11:57:06,636 +0700 [main] DEBUG (WebSocketServer.java:36) - Netty web socket server started at port 6898!
+2019-01-28 11:57:20,059 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (InternalLoggerFactory.java:47) - Using Log4J as the default logging framework
+2019-01-28 11:57:20,065 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent0.java:376) - -Dio.netty.noUnsafe: false
+2019-01-28 11:57:20,065 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent0.java:829) - Java version: 8
+2019-01-28 11:57:20,066 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent0.java:120) - sun.misc.Unsafe.theUnsafe: available
+2019-01-28 11:57:20,066 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent0.java:144) - sun.misc.Unsafe.copyMemory: available
+2019-01-28 11:57:20,067 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent0.java:182) - java.nio.Buffer.address: available
+2019-01-28 11:57:20,067 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent0.java:243) - direct buffer constructor: available
+2019-01-28 11:57:20,068 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent0.java:294) - java.nio.Bits.unaligned: available, true
+2019-01-28 11:57:20,068 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent0.java:359) - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2019-01-28 11:57:20,068 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent0.java:366) - java.nio.DirectByteBuffer.<init>(long, int): available
+2019-01-28 11:57:20,068 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent.java:980) - sun.misc.Unsafe: available
+2019-01-28 11:57:20,069 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent.java:1074) - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+2019-01-28 11:57:20,069 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent.java:1153) - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2019-01-28 11:57:20,070 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent.java:132) - -Dio.netty.noPreferDirect: false
+2019-01-28 11:57:20,070 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent.java:172) - -Dio.netty.maxDirectMemory: 3603431424 bytes
+2019-01-28 11:57:20,072 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent.java:178) - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2019-01-28 11:57:20,072 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (CleanerJava6.java:60) - java.nio.ByteBuffer.cleaner(): available
+2019-01-28 11:57:20,363 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (MultithreadEventLoopGroup.java:44) - -Dio.netty.eventLoopThreads: 8
+2019-01-28 11:57:20,381 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (NioEventLoop.java:111) - -Dio.netty.noKeySetOptimization: false
+2019-01-28 11:57:20,381 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (NioEventLoop.java:112) - -Dio.netty.selectorAutoRebuildThreshold: 512
+2019-01-28 11:57:20,388 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent.java:848) - org.jctools-core.MpscChunkedArrayQueue: available
+2019-01-28 11:57:20,402 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (NetUtil.java:139) - -Djava.net.preferIPv4Stack: false
+2019-01-28 11:57:20,402 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (NetUtil.java:140) - -Djava.net.preferIPv6Addresses: false
+2019-01-28 11:57:20,404 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (NetUtil.java:224) - Loopback interface: lo (lo, 0:0:0:0:0:0:0:1%lo)
+2019-01-28 11:57:20,405 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (NetUtil.java:271) - /proc/sys/net/core/somaxconn: 128
+2019-01-28 11:57:20,423 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (InternalThreadLocalMap.java:54) - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2019-01-28 11:57:20,423 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (InternalThreadLocalMap.java:57) - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2019-01-28 11:57:20,440 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (ResourceLeakDetector.java:121) - -Dio.netty.leakDetection.level: simple
+2019-01-28 11:57:20,441 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (ResourceLeakDetector.java:122) - -Dio.netty.leakDetection.targetRecords: 4
+2019-01-28 11:57:20,442 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (ResourceLeakDetectorFactory.java:202) - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@3a59d94
+2019-01-28 11:57:20,475 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (DefaultChannelId.java:79) - -Dio.netty.processId: 20283 (auto-detected)
+2019-01-28 11:57:20,478 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (DefaultChannelId.java:101) - -Dio.netty.machineId: 14:ab:c5:ff:fe:78:8d:90 (auto-detected)
+2019-01-28 11:57:20,504 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:120) - -Dio.netty.allocator.numHeapArenas: 8
+2019-01-28 11:57:20,504 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:121) - -Dio.netty.allocator.numDirectArenas: 8
+2019-01-28 11:57:20,504 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:123) - -Dio.netty.allocator.pageSize: 8192
+2019-01-28 11:57:20,504 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:128) - -Dio.netty.allocator.maxOrder: 11
+2019-01-28 11:57:20,505 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:132) - -Dio.netty.allocator.chunkSize: 16777216
+2019-01-28 11:57:20,505 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:133) - -Dio.netty.allocator.tinyCacheSize: 512
+2019-01-28 11:57:20,505 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:134) - -Dio.netty.allocator.smallCacheSize: 256
+2019-01-28 11:57:20,505 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:135) - -Dio.netty.allocator.normalCacheSize: 64
+2019-01-28 11:57:20,505 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:136) - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2019-01-28 11:57:20,505 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:137) - -Dio.netty.allocator.cacheTrimInterval: 8192
+2019-01-28 11:57:20,505 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:138) - -Dio.netty.allocator.useCacheForAllThreads: true
+2019-01-28 11:57:20,512 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (ByteBufUtil.java:83) - -Dio.netty.allocator.type: pooled
+2019-01-28 11:57:20,512 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (ByteBufUtil.java:92) - -Dio.netty.threadLocalDirectBufferSize: 0
+2019-01-28 11:57:20,512 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (ByteBufUtil.java:95) - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2019-01-28 11:57:20,660 +0700 [New I/O  worker #1] INFO  (WebSocketServerHandler.java:65) - Entry connect HTTP request
+2019-01-28 11:57:20,745 +0700 [New I/O  worker #1] DEBUG (Recycler.java:96) - -Dio.netty.recycler.maxCapacityPerThread: 4096
+2019-01-28 11:57:20,745 +0700 [New I/O  worker #1] DEBUG (Recycler.java:97) - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+2019-01-28 11:57:20,745 +0700 [New I/O  worker #1] DEBUG (Recycler.java:98) - -Dio.netty.recycler.linkCapacity: 16
+2019-01-28 11:57:20,745 +0700 [New I/O  worker #1] DEBUG (Recycler.java:99) - -Dio.netty.recycler.ratio: 8
+2019-01-28 11:57:20,754 +0700 [redisson-netty-4-1] DEBUG (AbstractByteBuf.java:52) - -Dio.netty.buffer.bytebuf.checkAccessible: true
+2019-01-28 11:57:20,755 +0700 [redisson-netty-4-1] DEBUG (ResourceLeakDetectorFactory.java:202) - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@3195ba84
+2019-01-28 11:57:34,533 +0700 [New I/O  worker #2] INFO  (WebSocketServerHandler.java:65) - Entry connect HTTP request
+2019-01-28 11:57:34,535 +0700 [New I/O  worker #2] INFO  (WebSocketServerHandler.java:144) - Require handshaker /websocket
+2019-01-28 11:57:34,562 +0700 [New I/O  worker #2] INFO  (WebSocketServerHandler.java:69) - Entry connect socket
+2019-01-28 11:57:34,562 +0700 [New I/O  worker #2] INFO  (WebSocketServerHandler.java:175) - Handle websocket
+2019-01-28 11:57:34,563 +0700 [New I/O  worker #2] INFO  (WebSocketServerHandler.java:212) - Register Linh:Uyển Vy
+2019-01-28 11:57:34,564 +0700 [New I/O  worker #2] INFO  (WebSocketServerHandler.java:223) - Register Event: Linh :1153734453
+2019-01-28 11:57:34,564 +0700 [New I/O  worker #2] INFO  (WebSocketServerHandler.java:269) - Broadcast message in conversation Uyển Vy
+2019-01-28 11:57:34,567 +0700 [New I/O  worker #3] INFO  (WebSocketServerHandler.java:65) - Entry connect HTTP request
+2019-01-28 11:57:34,567 +0700 [New I/O  worker #3] INFO  (WebSocketServerHandler.java:144) - Require handshaker /websocket
+2019-01-28 11:57:34,569 +0700 [New I/O  worker #3] INFO  (WebSocketServerHandler.java:69) - Entry connect socket
+2019-01-28 11:57:34,569 +0700 [New I/O  worker #3] INFO  (WebSocketServerHandler.java:175) - Handle websocket
+2019-01-28 11:57:34,569 +0700 [New I/O  worker #3] INFO  (WebSocketServerHandler.java:212) - Register Hoang:Overnight party
+2019-01-28 11:57:34,569 +0700 [New I/O  worker #3] INFO  (WebSocketServerHandler.java:223) - Register Event: Hoang :2112014590
+2019-01-28 11:57:34,569 +0700 [New I/O  worker #3] INFO  (WebSocketServerHandler.java:269) - Broadcast message in conversation Overnight party
+2019-01-28 11:57:34,579 +0700 [New I/O  worker #4] INFO  (WebSocketServerHandler.java:65) - Entry connect HTTP request
+2019-01-28 11:57:34,580 +0700 [New I/O  worker #4] INFO  (WebSocketServerHandler.java:144) - Require handshaker /websocket
+2019-01-28 11:57:34,581 +0700 [New I/O  worker #4] INFO  (WebSocketServerHandler.java:69) - Entry connect socket
+2019-01-28 11:57:34,581 +0700 [New I/O  worker #4] INFO  (WebSocketServerHandler.java:175) - Handle websocket
+2019-01-28 11:57:34,581 +0700 [New I/O  worker #4] INFO  (WebSocketServerHandler.java:212) - Register Akisstan:Uyển Vy
+2019-01-28 11:57:34,581 +0700 [New I/O  worker #4] INFO  (WebSocketServerHandler.java:223) - Register Event: Akisstan :120628455
+2019-01-28 11:57:34,581 +0700 [New I/O  worker #4] INFO  (WebSocketServerHandler.java:269) - Broadcast message in conversation Uyển Vy
+2019-01-28 11:57:34,592 +0700 [New I/O  worker #5] INFO  (WebSocketServerHandler.java:65) - Entry connect HTTP request
+2019-01-28 11:57:34,592 +0700 [New I/O  worker #5] INFO  (WebSocketServerHandler.java:144) - Require handshaker /websocket
+2019-01-28 11:57:34,594 +0700 [New I/O  worker #5] INFO  (WebSocketServerHandler.java:69) - Entry connect socket
+2019-01-28 11:57:34,594 +0700 [New I/O  worker #5] INFO  (WebSocketServerHandler.java:175) - Handle websocket
+2019-01-28 11:57:34,594 +0700 [New I/O  worker #5] INFO  (WebSocketServerHandler.java:212) - Register mtSiniChi:Uyển Vy
+2019-01-28 11:57:34,594 +0700 [New I/O  worker #5] INFO  (WebSocketServerHandler.java:223) - Register Event: mtSiniChi :216229688
+2019-01-28 11:57:34,594 +0700 [New I/O  worker #5] INFO  (WebSocketServerHandler.java:269) - Broadcast message in conversation Uyển Vy
+2019-01-28 12:06:29,244 +0700 [New I/O  worker #6] INFO  (WebSocketServerHandler.java:65) - Entry connect HTTP request
+2019-01-28 12:06:34,015 +0700 [main] DEBUG (WebSocketServer.java:36) - Netty web socket server started at port 6898!
+2019-01-28 12:06:37,789 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (InternalLoggerFactory.java:47) - Using Log4J as the default logging framework
+2019-01-28 12:06:37,797 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent0.java:376) - -Dio.netty.noUnsafe: false
+2019-01-28 12:06:37,797 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent0.java:829) - Java version: 8
+2019-01-28 12:06:37,798 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent0.java:120) - sun.misc.Unsafe.theUnsafe: available
+2019-01-28 12:06:37,799 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent0.java:144) - sun.misc.Unsafe.copyMemory: available
+2019-01-28 12:06:37,800 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent0.java:182) - java.nio.Buffer.address: available
+2019-01-28 12:06:37,801 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent0.java:243) - direct buffer constructor: available
+2019-01-28 12:06:37,802 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent0.java:294) - java.nio.Bits.unaligned: available, true
+2019-01-28 12:06:37,802 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent0.java:359) - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2019-01-28 12:06:37,802 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent0.java:366) - java.nio.DirectByteBuffer.<init>(long, int): available
+2019-01-28 12:06:37,802 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent.java:980) - sun.misc.Unsafe: available
+2019-01-28 12:06:37,803 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent.java:1074) - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+2019-01-28 12:06:37,803 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent.java:1153) - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2019-01-28 12:06:37,805 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent.java:132) - -Dio.netty.noPreferDirect: false
+2019-01-28 12:06:37,805 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent.java:172) - -Dio.netty.maxDirectMemory: 3603431424 bytes
+2019-01-28 12:06:37,807 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent.java:178) - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2019-01-28 12:06:37,808 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (CleanerJava6.java:60) - java.nio.ByteBuffer.cleaner(): available
+2019-01-28 12:06:38,104 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (MultithreadEventLoopGroup.java:44) - -Dio.netty.eventLoopThreads: 8
+2019-01-28 12:06:38,120 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (NioEventLoop.java:111) - -Dio.netty.noKeySetOptimization: false
+2019-01-28 12:06:38,120 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (NioEventLoop.java:112) - -Dio.netty.selectorAutoRebuildThreshold: 512
+2019-01-28 12:06:38,126 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent.java:848) - org.jctools-core.MpscChunkedArrayQueue: available
+2019-01-28 12:06:38,136 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (NetUtil.java:139) - -Djava.net.preferIPv4Stack: false
+2019-01-28 12:06:38,136 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (NetUtil.java:140) - -Djava.net.preferIPv6Addresses: false
+2019-01-28 12:06:38,138 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (NetUtil.java:224) - Loopback interface: lo (lo, 0:0:0:0:0:0:0:1%lo)
+2019-01-28 12:06:38,138 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (NetUtil.java:271) - /proc/sys/net/core/somaxconn: 128
+2019-01-28 12:06:38,153 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (InternalThreadLocalMap.java:54) - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2019-01-28 12:06:38,153 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (InternalThreadLocalMap.java:57) - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2019-01-28 12:06:38,170 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (ResourceLeakDetector.java:121) - -Dio.netty.leakDetection.level: simple
+2019-01-28 12:06:38,170 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (ResourceLeakDetector.java:122) - -Dio.netty.leakDetection.targetRecords: 4
+2019-01-28 12:06:38,171 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (ResourceLeakDetectorFactory.java:202) - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@4c910ed6
+2019-01-28 12:06:38,201 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (DefaultChannelId.java:79) - -Dio.netty.processId: 20724 (auto-detected)
+2019-01-28 12:06:38,204 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (DefaultChannelId.java:101) - -Dio.netty.machineId: 14:ab:c5:ff:fe:78:8d:90 (auto-detected)
+2019-01-28 12:06:38,229 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:120) - -Dio.netty.allocator.numHeapArenas: 8
+2019-01-28 12:06:38,230 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:121) - -Dio.netty.allocator.numDirectArenas: 8
+2019-01-28 12:06:38,230 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:123) - -Dio.netty.allocator.pageSize: 8192
+2019-01-28 12:06:38,230 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:128) - -Dio.netty.allocator.maxOrder: 11
+2019-01-28 12:06:38,230 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:132) - -Dio.netty.allocator.chunkSize: 16777216
+2019-01-28 12:06:38,230 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:133) - -Dio.netty.allocator.tinyCacheSize: 512
+2019-01-28 12:06:38,230 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:134) - -Dio.netty.allocator.smallCacheSize: 256
+2019-01-28 12:06:38,230 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:135) - -Dio.netty.allocator.normalCacheSize: 64
+2019-01-28 12:06:38,231 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:136) - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2019-01-28 12:06:38,231 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:137) - -Dio.netty.allocator.cacheTrimInterval: 8192
+2019-01-28 12:06:38,231 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:138) - -Dio.netty.allocator.useCacheForAllThreads: true
+2019-01-28 12:06:38,237 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (ByteBufUtil.java:83) - -Dio.netty.allocator.type: pooled
+2019-01-28 12:06:38,238 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (ByteBufUtil.java:92) - -Dio.netty.threadLocalDirectBufferSize: 0
+2019-01-28 12:06:38,238 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (ByteBufUtil.java:95) - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2019-01-28 12:06:38,381 +0700 [New I/O  worker #1] INFO  (WebSocketServerHandler.java:65) - Entry connect HTTP request
+2019-01-28 12:06:38,475 +0700 [New I/O  worker #1] DEBUG (Recycler.java:96) - -Dio.netty.recycler.maxCapacityPerThread: 4096
+2019-01-28 12:06:38,475 +0700 [New I/O  worker #1] DEBUG (Recycler.java:97) - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+2019-01-28 12:06:38,475 +0700 [New I/O  worker #1] DEBUG (Recycler.java:98) - -Dio.netty.recycler.linkCapacity: 16
+2019-01-28 12:06:38,475 +0700 [New I/O  worker #1] DEBUG (Recycler.java:99) - -Dio.netty.recycler.ratio: 8
+2019-01-28 12:06:38,483 +0700 [redisson-netty-4-2] DEBUG (AbstractByteBuf.java:52) - -Dio.netty.buffer.bytebuf.checkAccessible: true
+2019-01-28 12:06:38,483 +0700 [redisson-netty-4-2] DEBUG (ResourceLeakDetectorFactory.java:202) - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@10e153e
+2019-01-28 12:07:02,532 +0700 [New I/O  worker #2] INFO  (WebSocketServerHandler.java:65) - Entry connect HTTP request
+2019-01-28 12:07:02,533 +0700 [New I/O  worker #2] INFO  (WebSocketServerHandler.java:144) - Require handshaker /websocket
+2019-01-28 12:07:02,564 +0700 [New I/O  worker #2] INFO  (WebSocketServerHandler.java:69) - Entry connect socket
+2019-01-28 12:07:02,564 +0700 [New I/O  worker #2] INFO  (WebSocketServerHandler.java:175) - Handle websocket
+2019-01-28 12:07:02,565 +0700 [New I/O  worker #2] INFO  (WebSocketServerHandler.java:212) - Register Akisstan:Uyển Vy
+2019-01-28 12:07:02,565 +0700 [New I/O  worker #2] INFO  (WebSocketServerHandler.java:223) - Register Event: Akisstan :48904805
+2019-01-28 12:07:02,566 +0700 [New I/O  worker #2] INFO  (WebSocketServerHandler.java:269) - Broadcast message in conversation Uyển Vy
+2019-01-28 12:07:02,569 +0700 [New I/O  worker #3] INFO  (WebSocketServerHandler.java:65) - Entry connect HTTP request
+2019-01-28 12:07:02,570 +0700 [New I/O  worker #3] INFO  (WebSocketServerHandler.java:144) - Require handshaker /websocket
+2019-01-28 12:07:02,571 +0700 [New I/O  worker #3] INFO  (WebSocketServerHandler.java:69) - Entry connect socket
+2019-01-28 12:07:02,571 +0700 [New I/O  worker #3] INFO  (WebSocketServerHandler.java:175) - Handle websocket
+2019-01-28 12:07:02,571 +0700 [New I/O  worker #3] INFO  (WebSocketServerHandler.java:212) - Register mtSiniChi:Uyển Vy
+2019-01-28 12:07:02,571 +0700 [New I/O  worker #3] INFO  (WebSocketServerHandler.java:223) - Register Event: mtSiniChi :210484714
+2019-01-28 12:07:02,572 +0700 [New I/O  worker #3] INFO  (WebSocketServerHandler.java:269) - Broadcast message in conversation Uyển Vy
+2019-01-28 12:07:02,583 +0700 [New I/O  worker #4] INFO  (WebSocketServerHandler.java:65) - Entry connect HTTP request
+2019-01-28 12:07:02,583 +0700 [New I/O  worker #4] INFO  (WebSocketServerHandler.java:144) - Require handshaker /websocket
+2019-01-28 12:07:02,584 +0700 [New I/O  worker #4] INFO  (WebSocketServerHandler.java:69) - Entry connect socket
+2019-01-28 12:07:02,584 +0700 [New I/O  worker #4] INFO  (WebSocketServerHandler.java:175) - Handle websocket
+2019-01-28 12:07:02,584 +0700 [New I/O  worker #4] INFO  (WebSocketServerHandler.java:212) - Register Hoang:Overnight party
+2019-01-28 12:07:02,585 +0700 [New I/O  worker #4] INFO  (WebSocketServerHandler.java:223) - Register Event: Hoang :1990157405
+2019-01-28 12:07:02,585 +0700 [New I/O  worker #4] INFO  (WebSocketServerHandler.java:269) - Broadcast message in conversation Overnight party
+2019-01-28 12:07:02,595 +0700 [New I/O  worker #5] INFO  (WebSocketServerHandler.java:65) - Entry connect HTTP request
+2019-01-28 12:07:02,596 +0700 [New I/O  worker #5] INFO  (WebSocketServerHandler.java:144) - Require handshaker /websocket
+2019-01-28 12:07:02,597 +0700 [New I/O  worker #5] INFO  (WebSocketServerHandler.java:69) - Entry connect socket
+2019-01-28 12:07:02,597 +0700 [New I/O  worker #5] INFO  (WebSocketServerHandler.java:175) - Handle websocket
+2019-01-28 12:07:02,597 +0700 [New I/O  worker #5] INFO  (WebSocketServerHandler.java:212) - Register Linh:Uyển Vy
+2019-01-28 12:07:02,597 +0700 [New I/O  worker #5] INFO  (WebSocketServerHandler.java:223) - Register Event: Linh :1950407760
+2019-01-28 12:07:02,598 +0700 [New I/O  worker #5] INFO  (WebSocketServerHandler.java:269) - Broadcast message in conversation Uyển Vy
+2019-01-28 12:09:46,614 +0700 [main] DEBUG (WebSocketServer.java:36) - Netty web socket server started at port 6898!
+2019-01-28 12:09:51,475 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (InternalLoggerFactory.java:47) - Using Log4J as the default logging framework
+2019-01-28 12:09:51,481 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent0.java:376) - -Dio.netty.noUnsafe: false
+2019-01-28 12:09:51,482 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent0.java:829) - Java version: 8
+2019-01-28 12:09:51,483 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent0.java:120) - sun.misc.Unsafe.theUnsafe: available
+2019-01-28 12:09:51,484 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent0.java:144) - sun.misc.Unsafe.copyMemory: available
+2019-01-28 12:09:51,484 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent0.java:182) - java.nio.Buffer.address: available
+2019-01-28 12:09:51,485 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent0.java:243) - direct buffer constructor: available
+2019-01-28 12:09:51,486 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent0.java:294) - java.nio.Bits.unaligned: available, true
+2019-01-28 12:09:51,486 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent0.java:359) - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2019-01-28 12:09:51,486 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent0.java:366) - java.nio.DirectByteBuffer.<init>(long, int): available
+2019-01-28 12:09:51,487 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent.java:980) - sun.misc.Unsafe: available
+2019-01-28 12:09:51,487 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent.java:1074) - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+2019-01-28 12:09:51,488 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent.java:1153) - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2019-01-28 12:09:51,489 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent.java:132) - -Dio.netty.noPreferDirect: false
+2019-01-28 12:09:51,489 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent.java:172) - -Dio.netty.maxDirectMemory: 3603431424 bytes
+2019-01-28 12:09:51,491 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent.java:178) - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2019-01-28 12:09:51,492 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (CleanerJava6.java:60) - java.nio.ByteBuffer.cleaner(): available
+2019-01-28 12:09:51,775 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (MultithreadEventLoopGroup.java:44) - -Dio.netty.eventLoopThreads: 8
+2019-01-28 12:09:51,791 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (NioEventLoop.java:111) - -Dio.netty.noKeySetOptimization: false
+2019-01-28 12:09:51,791 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (NioEventLoop.java:112) - -Dio.netty.selectorAutoRebuildThreshold: 512
+2019-01-28 12:09:51,797 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent.java:848) - org.jctools-core.MpscChunkedArrayQueue: available
+2019-01-28 12:09:51,806 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (NetUtil.java:139) - -Djava.net.preferIPv4Stack: false
+2019-01-28 12:09:51,807 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (NetUtil.java:140) - -Djava.net.preferIPv6Addresses: false
+2019-01-28 12:09:51,808 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (NetUtil.java:224) - Loopback interface: lo (lo, 0:0:0:0:0:0:0:1%lo)
+2019-01-28 12:09:51,809 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (NetUtil.java:271) - /proc/sys/net/core/somaxconn: 128
+2019-01-28 12:09:51,823 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (InternalThreadLocalMap.java:54) - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2019-01-28 12:09:51,823 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (InternalThreadLocalMap.java:57) - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2019-01-28 12:09:51,841 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (ResourceLeakDetector.java:121) - -Dio.netty.leakDetection.level: simple
+2019-01-28 12:09:51,841 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (ResourceLeakDetector.java:122) - -Dio.netty.leakDetection.targetRecords: 4
+2019-01-28 12:09:51,842 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (ResourceLeakDetectorFactory.java:202) - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@3a59d94
+2019-01-28 12:09:51,880 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (DefaultChannelId.java:79) - -Dio.netty.processId: 20946 (auto-detected)
+2019-01-28 12:09:51,883 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (DefaultChannelId.java:101) - -Dio.netty.machineId: 14:ab:c5:ff:fe:78:8d:90 (auto-detected)
+2019-01-28 12:09:51,911 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:120) - -Dio.netty.allocator.numHeapArenas: 8
+2019-01-28 12:09:51,911 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:121) - -Dio.netty.allocator.numDirectArenas: 8
+2019-01-28 12:09:51,911 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:123) - -Dio.netty.allocator.pageSize: 8192
+2019-01-28 12:09:51,911 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:128) - -Dio.netty.allocator.maxOrder: 11
+2019-01-28 12:09:51,911 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:132) - -Dio.netty.allocator.chunkSize: 16777216
+2019-01-28 12:09:51,911 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:133) - -Dio.netty.allocator.tinyCacheSize: 512
+2019-01-28 12:09:51,912 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:134) - -Dio.netty.allocator.smallCacheSize: 256
+2019-01-28 12:09:51,912 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:135) - -Dio.netty.allocator.normalCacheSize: 64
+2019-01-28 12:09:51,912 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:136) - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2019-01-28 12:09:51,912 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:137) - -Dio.netty.allocator.cacheTrimInterval: 8192
+2019-01-28 12:09:51,912 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:138) - -Dio.netty.allocator.useCacheForAllThreads: true
+2019-01-28 12:09:51,920 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (ByteBufUtil.java:83) - -Dio.netty.allocator.type: pooled
+2019-01-28 12:09:51,920 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (ByteBufUtil.java:92) - -Dio.netty.threadLocalDirectBufferSize: 0
+2019-01-28 12:09:51,920 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (ByteBufUtil.java:95) - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2019-01-28 12:09:52,073 +0700 [New I/O  worker #1] INFO  (WebSocketServerHandler.java:65) - Entry connect HTTP request
+2019-01-28 12:09:52,162 +0700 [New I/O  worker #1] DEBUG (Recycler.java:96) - -Dio.netty.recycler.maxCapacityPerThread: 4096
+2019-01-28 12:09:52,163 +0700 [New I/O  worker #1] DEBUG (Recycler.java:97) - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+2019-01-28 12:09:52,163 +0700 [New I/O  worker #1] DEBUG (Recycler.java:98) - -Dio.netty.recycler.linkCapacity: 16
+2019-01-28 12:09:52,163 +0700 [New I/O  worker #1] DEBUG (Recycler.java:99) - -Dio.netty.recycler.ratio: 8
+2019-01-28 12:09:52,172 +0700 [redisson-netty-4-2] DEBUG (AbstractByteBuf.java:52) - -Dio.netty.buffer.bytebuf.checkAccessible: true
+2019-01-28 12:09:52,172 +0700 [redisson-netty-4-2] DEBUG (ResourceLeakDetectorFactory.java:202) - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@6c801de7
+2019-01-28 12:09:59,530 +0700 [New I/O  worker #2] INFO  (WebSocketServerHandler.java:65) - Entry connect HTTP request
+2019-01-28 12:09:59,532 +0700 [New I/O  worker #2] INFO  (WebSocketServerHandler.java:144) - Require handshaker /websocket
+2019-01-28 12:09:59,577 +0700 [New I/O  worker #2] INFO  (WebSocketServerHandler.java:69) - Entry connect socket
+2019-01-28 12:09:59,578 +0700 [New I/O  worker #2] INFO  (WebSocketServerHandler.java:175) - Handle websocket
+2019-01-28 12:09:59,582 +0700 [New I/O  worker #3] INFO  (WebSocketServerHandler.java:65) - Entry connect HTTP request
+2019-01-28 12:09:59,583 +0700 [New I/O  worker #3] INFO  (WebSocketServerHandler.java:144) - Require handshaker /websocket
+2019-01-28 12:09:59,587 +0700 [New I/O  worker #3] INFO  (WebSocketServerHandler.java:69) - Entry connect socket
+2019-01-28 12:09:59,588 +0700 [New I/O  worker #3] INFO  (WebSocketServerHandler.java:175) - Handle websocket
+2019-01-28 12:09:59,589 +0700 [New I/O  worker #3] INFO  (WebSocketServerHandler.java:212) - Register Hoang:Overnight party
+2019-01-28 12:09:59,591 +0700 [New I/O  worker #3] INFO  (WebSocketServerHandler.java:223) - Register Event: Hoang :2112014590
+2019-01-28 12:09:59,596 +0700 [New I/O  worker #3] INFO  (WebSocketServerHandler.java:269) - Broadcast message in conversation Overnight party
+2019-01-28 12:09:59,596 +0700 [New I/O  worker #2] INFO  (WebSocketServerHandler.java:212) - Register Akisstan:Uyển Vy
+2019-01-28 12:09:59,599 +0700 [New I/O  worker #2] INFO  (WebSocketServerHandler.java:223) - Register Event: Akisstan :1153734453
+2019-01-28 12:09:59,601 +0700 [New I/O  worker #2] INFO  (WebSocketServerHandler.java:269) - Broadcast message in conversation Uyển Vy
+2019-01-28 12:09:59,612 +0700 [New I/O  worker #4] INFO  (WebSocketServerHandler.java:65) - Entry connect HTTP request
+2019-01-28 12:09:59,613 +0700 [New I/O  worker #4] INFO  (WebSocketServerHandler.java:144) - Require handshaker /websocket
+2019-01-28 12:09:59,617 +0700 [New I/O  worker #4] INFO  (WebSocketServerHandler.java:69) - Entry connect socket
+2019-01-28 12:09:59,617 +0700 [New I/O  worker #4] INFO  (WebSocketServerHandler.java:175) - Handle websocket
+2019-01-28 12:09:59,618 +0700 [New I/O  worker #4] INFO  (WebSocketServerHandler.java:212) - Register mtSiniChi:Uyển Vy
+2019-01-28 12:09:59,619 +0700 [New I/O  worker #4] INFO  (WebSocketServerHandler.java:223) - Register Event: mtSiniChi :120628455
+2019-01-28 12:09:59,620 +0700 [New I/O  worker #4] INFO  (WebSocketServerHandler.java:269) - Broadcast message in conversation Uyển Vy
+2019-01-28 12:09:59,636 +0700 [New I/O  worker #5] INFO  (WebSocketServerHandler.java:65) - Entry connect HTTP request
+2019-01-28 12:09:59,638 +0700 [New I/O  worker #5] INFO  (WebSocketServerHandler.java:144) - Require handshaker /websocket
+2019-01-28 12:09:59,642 +0700 [New I/O  worker #5] INFO  (WebSocketServerHandler.java:69) - Entry connect socket
+2019-01-28 12:09:59,642 +0700 [New I/O  worker #5] INFO  (WebSocketServerHandler.java:175) - Handle websocket
+2019-01-28 12:09:59,643 +0700 [New I/O  worker #5] INFO  (WebSocketServerHandler.java:212) - Register Linh:Uyển Vy
+2019-01-28 12:09:59,643 +0700 [New I/O  worker #5] INFO  (WebSocketServerHandler.java:223) - Register Event: Linh :216229688
+2019-01-28 12:09:59,644 +0700 [New I/O  worker #5] INFO  (WebSocketServerHandler.java:269) - Broadcast message in conversation Uyển Vy
+2019-01-28 12:10:01,813 +0700 [New I/O  worker #6] INFO  (WebSocketServerHandler.java:65) - Entry connect HTTP request
+2019-01-28 12:10:01,816 +0700 [New I/O  worker #6] INFO  (WebSocketServerHandler.java:160) - Undefine request /loadFriends
+2019-01-28 12:12:36,221 +0700 [main] DEBUG (WebSocketServer.java:36) - Netty web socket server started at port 6898!
+2019-01-28 12:12:46,776 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (InternalLoggerFactory.java:47) - Using Log4J as the default logging framework
+2019-01-28 12:12:46,783 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent0.java:376) - -Dio.netty.noUnsafe: false
+2019-01-28 12:12:46,783 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent0.java:829) - Java version: 8
+2019-01-28 12:12:46,785 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent0.java:120) - sun.misc.Unsafe.theUnsafe: available
+2019-01-28 12:12:46,786 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent0.java:144) - sun.misc.Unsafe.copyMemory: available
+2019-01-28 12:12:46,786 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent0.java:182) - java.nio.Buffer.address: available
+2019-01-28 12:12:46,787 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent0.java:243) - direct buffer constructor: available
+2019-01-28 12:12:46,788 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent0.java:294) - java.nio.Bits.unaligned: available, true
+2019-01-28 12:12:46,789 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent0.java:359) - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2019-01-28 12:12:46,789 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent0.java:366) - java.nio.DirectByteBuffer.<init>(long, int): available
+2019-01-28 12:12:46,789 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent.java:980) - sun.misc.Unsafe: available
+2019-01-28 12:12:46,790 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent.java:1074) - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+2019-01-28 12:12:46,790 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent.java:1153) - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2019-01-28 12:12:46,792 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent.java:132) - -Dio.netty.noPreferDirect: false
+2019-01-28 12:12:46,792 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent.java:172) - -Dio.netty.maxDirectMemory: 3603431424 bytes
+2019-01-28 12:12:46,794 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent.java:178) - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2019-01-28 12:12:46,795 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (CleanerJava6.java:60) - java.nio.ByteBuffer.cleaner(): available
+2019-01-28 12:12:47,139 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (MultithreadEventLoopGroup.java:44) - -Dio.netty.eventLoopThreads: 8
+2019-01-28 12:12:47,161 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (NioEventLoop.java:111) - -Dio.netty.noKeySetOptimization: false
+2019-01-28 12:12:47,161 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (NioEventLoop.java:112) - -Dio.netty.selectorAutoRebuildThreshold: 512
+2019-01-28 12:12:47,169 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent.java:848) - org.jctools-core.MpscChunkedArrayQueue: available
+2019-01-28 12:12:47,180 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (NetUtil.java:139) - -Djava.net.preferIPv4Stack: false
+2019-01-28 12:12:47,180 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (NetUtil.java:140) - -Djava.net.preferIPv6Addresses: false
+2019-01-28 12:12:47,182 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (NetUtil.java:224) - Loopback interface: lo (lo, 0:0:0:0:0:0:0:1%lo)
+2019-01-28 12:12:47,183 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (NetUtil.java:271) - /proc/sys/net/core/somaxconn: 128
+2019-01-28 12:12:47,203 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (InternalThreadLocalMap.java:54) - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2019-01-28 12:12:47,203 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (InternalThreadLocalMap.java:57) - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2019-01-28 12:12:47,225 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (ResourceLeakDetector.java:121) - -Dio.netty.leakDetection.level: simple
+2019-01-28 12:12:47,226 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (ResourceLeakDetector.java:122) - -Dio.netty.leakDetection.targetRecords: 4
+2019-01-28 12:12:47,228 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (ResourceLeakDetectorFactory.java:202) - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@4c910ed6
+2019-01-28 12:12:47,263 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (DefaultChannelId.java:79) - -Dio.netty.processId: 21155 (auto-detected)
+2019-01-28 12:12:47,265 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (DefaultChannelId.java:101) - -Dio.netty.machineId: 14:ab:c5:ff:fe:78:8d:90 (auto-detected)
+2019-01-28 12:12:47,301 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:120) - -Dio.netty.allocator.numHeapArenas: 8
+2019-01-28 12:12:47,302 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:121) - -Dio.netty.allocator.numDirectArenas: 8
+2019-01-28 12:12:47,302 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:123) - -Dio.netty.allocator.pageSize: 8192
+2019-01-28 12:12:47,302 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:128) - -Dio.netty.allocator.maxOrder: 11
+2019-01-28 12:12:47,302 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:132) - -Dio.netty.allocator.chunkSize: 16777216
+2019-01-28 12:12:47,302 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:133) - -Dio.netty.allocator.tinyCacheSize: 512
+2019-01-28 12:12:47,303 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:134) - -Dio.netty.allocator.smallCacheSize: 256
+2019-01-28 12:12:47,303 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:135) - -Dio.netty.allocator.normalCacheSize: 64
+2019-01-28 12:12:47,303 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:136) - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2019-01-28 12:12:47,303 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:137) - -Dio.netty.allocator.cacheTrimInterval: 8192
+2019-01-28 12:12:47,304 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:138) - -Dio.netty.allocator.useCacheForAllThreads: true
+2019-01-28 12:12:47,313 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (ByteBufUtil.java:83) - -Dio.netty.allocator.type: pooled
+2019-01-28 12:12:47,313 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (ByteBufUtil.java:92) - -Dio.netty.threadLocalDirectBufferSize: 0
+2019-01-28 12:12:47,313 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (ByteBufUtil.java:95) - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2019-01-28 12:12:47,482 +0700 [New I/O  worker #1] INFO  (WebSocketServerHandler.java:65) - Entry connect HTTP request
+2019-01-28 12:12:47,593 +0700 [New I/O  worker #1] DEBUG (Recycler.java:96) - -Dio.netty.recycler.maxCapacityPerThread: 4096
+2019-01-28 12:12:47,593 +0700 [New I/O  worker #1] DEBUG (Recycler.java:97) - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+2019-01-28 12:12:47,594 +0700 [New I/O  worker #1] DEBUG (Recycler.java:98) - -Dio.netty.recycler.linkCapacity: 16
+2019-01-28 12:12:47,594 +0700 [New I/O  worker #1] DEBUG (Recycler.java:99) - -Dio.netty.recycler.ratio: 8
+2019-01-28 12:12:47,605 +0700 [redisson-netty-4-2] DEBUG (AbstractByteBuf.java:52) - -Dio.netty.buffer.bytebuf.checkAccessible: true
+2019-01-28 12:12:47,606 +0700 [redisson-netty-4-2] DEBUG (ResourceLeakDetectorFactory.java:202) - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@58f22368
+2019-01-28 12:12:47,707 +0700 [New I/O  worker #1] INFO  (WebSocketServerHandler.java:160) - Undefine request /loadFriends
+2019-01-28 12:13:03,523 +0700 [New I/O  worker #2] INFO  (WebSocketServerHandler.java:65) - Entry connect HTTP request
+2019-01-28 12:13:03,523 +0700 [New I/O  worker #2] INFO  (WebSocketServerHandler.java:144) - Require handshaker /websocket
+2019-01-28 12:13:03,540 +0700 [New I/O  worker #2] INFO  (WebSocketServerHandler.java:69) - Entry connect socket
+2019-01-28 12:13:03,540 +0700 [New I/O  worker #2] INFO  (WebSocketServerHandler.java:175) - Handle websocket
+2019-01-28 12:13:03,541 +0700 [New I/O  worker #2] INFO  (WebSocketServerHandler.java:212) - Register Akisstan:Uyển Vy
+2019-01-28 12:13:03,542 +0700 [New I/O  worker #2] INFO  (WebSocketServerHandler.java:223) - Register Event: Akisstan :48904805
+2019-01-28 12:13:03,542 +0700 [New I/O  worker #3] INFO  (WebSocketServerHandler.java:65) - Entry connect HTTP request
+2019-01-28 12:13:03,542 +0700 [New I/O  worker #3] INFO  (WebSocketServerHandler.java:144) - Require handshaker /websocket
+2019-01-28 12:13:03,542 +0700 [New I/O  worker #2] INFO  (WebSocketServerHandler.java:269) - Broadcast message in conversation Uyển Vy
+2019-01-28 12:13:03,544 +0700 [New I/O  worker #3] INFO  (WebSocketServerHandler.java:69) - Entry connect socket
+2019-01-28 12:13:03,544 +0700 [New I/O  worker #3] INFO  (WebSocketServerHandler.java:175) - Handle websocket
+2019-01-28 12:13:03,544 +0700 [New I/O  worker #3] INFO  (WebSocketServerHandler.java:212) - Register Hoang:Overnight party
+2019-01-28 12:13:03,545 +0700 [New I/O  worker #3] INFO  (WebSocketServerHandler.java:223) - Register Event: Hoang :210484714
+2019-01-28 12:13:03,545 +0700 [New I/O  worker #3] INFO  (WebSocketServerHandler.java:269) - Broadcast message in conversation Overnight party
+2019-01-28 12:13:03,555 +0700 [New I/O  worker #4] INFO  (WebSocketServerHandler.java:65) - Entry connect HTTP request
+2019-01-28 12:13:03,555 +0700 [New I/O  worker #4] INFO  (WebSocketServerHandler.java:144) - Require handshaker /websocket
+2019-01-28 12:13:03,556 +0700 [New I/O  worker #4] INFO  (WebSocketServerHandler.java:69) - Entry connect socket
+2019-01-28 12:13:03,557 +0700 [New I/O  worker #4] INFO  (WebSocketServerHandler.java:175) - Handle websocket
+2019-01-28 12:13:03,557 +0700 [New I/O  worker #4] INFO  (WebSocketServerHandler.java:212) - Register mtSiniChi:Uyển Vy
+2019-01-28 12:13:03,557 +0700 [New I/O  worker #4] INFO  (WebSocketServerHandler.java:223) - Register Event: mtSiniChi :1990157405
+2019-01-28 12:13:03,557 +0700 [New I/O  worker #4] INFO  (WebSocketServerHandler.java:269) - Broadcast message in conversation Uyển Vy
+2019-01-28 12:13:03,569 +0700 [New I/O  worker #5] INFO  (WebSocketServerHandler.java:65) - Entry connect HTTP request
+2019-01-28 12:13:03,569 +0700 [New I/O  worker #5] INFO  (WebSocketServerHandler.java:144) - Require handshaker /websocket
+2019-01-28 12:13:03,570 +0700 [New I/O  worker #5] INFO  (WebSocketServerHandler.java:69) - Entry connect socket
+2019-01-28 12:13:03,571 +0700 [New I/O  worker #5] INFO  (WebSocketServerHandler.java:175) - Handle websocket
+2019-01-28 12:13:03,571 +0700 [New I/O  worker #5] INFO  (WebSocketServerHandler.java:212) - Register Linh:Uyển Vy
+2019-01-28 12:13:03,571 +0700 [New I/O  worker #5] INFO  (WebSocketServerHandler.java:223) - Register Event: Linh :1950407760
+2019-01-28 12:13:03,571 +0700 [New I/O  worker #5] INFO  (WebSocketServerHandler.java:269) - Broadcast message in conversation Uyển Vy
+2019-01-28 12:14:08,450 +0700 [main] DEBUG (WebSocketServer.java:36) - Netty web socket server started at port 6898!
+2019-01-28 12:14:20,661 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (InternalLoggerFactory.java:47) - Using Log4J as the default logging framework
+2019-01-28 12:14:20,668 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent0.java:376) - -Dio.netty.noUnsafe: false
+2019-01-28 12:14:20,669 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent0.java:829) - Java version: 8
+2019-01-28 12:14:20,670 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent0.java:120) - sun.misc.Unsafe.theUnsafe: available
+2019-01-28 12:14:20,671 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent0.java:144) - sun.misc.Unsafe.copyMemory: available
+2019-01-28 12:14:20,672 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent0.java:182) - java.nio.Buffer.address: available
+2019-01-28 12:14:20,674 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent0.java:243) - direct buffer constructor: available
+2019-01-28 12:14:20,675 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent0.java:294) - java.nio.Bits.unaligned: available, true
+2019-01-28 12:14:20,676 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent0.java:359) - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2019-01-28 12:14:20,676 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent0.java:366) - java.nio.DirectByteBuffer.<init>(long, int): available
+2019-01-28 12:14:20,676 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent.java:980) - sun.misc.Unsafe: available
+2019-01-28 12:14:20,676 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent.java:1074) - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+2019-01-28 12:14:20,677 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent.java:1153) - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2019-01-28 12:14:20,679 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent.java:132) - -Dio.netty.noPreferDirect: false
+2019-01-28 12:14:20,679 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent.java:172) - -Dio.netty.maxDirectMemory: 3603431424 bytes
+2019-01-28 12:14:20,681 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent.java:178) - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2019-01-28 12:14:20,682 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (CleanerJava6.java:60) - java.nio.ByteBuffer.cleaner(): available
+2019-01-28 12:14:21,061 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (MultithreadEventLoopGroup.java:44) - -Dio.netty.eventLoopThreads: 8
+2019-01-28 12:14:21,084 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (NioEventLoop.java:111) - -Dio.netty.noKeySetOptimization: false
+2019-01-28 12:14:21,084 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (NioEventLoop.java:112) - -Dio.netty.selectorAutoRebuildThreshold: 512
+2019-01-28 12:14:21,092 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PlatformDependent.java:848) - org.jctools-core.MpscChunkedArrayQueue: available
+2019-01-28 12:14:21,106 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (NetUtil.java:139) - -Djava.net.preferIPv4Stack: false
+2019-01-28 12:14:21,106 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (NetUtil.java:140) - -Djava.net.preferIPv6Addresses: false
+2019-01-28 12:14:21,108 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (NetUtil.java:224) - Loopback interface: lo (lo, 0:0:0:0:0:0:0:1%lo)
+2019-01-28 12:14:21,109 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (NetUtil.java:271) - /proc/sys/net/core/somaxconn: 128
+2019-01-28 12:14:21,128 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (InternalThreadLocalMap.java:54) - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2019-01-28 12:14:21,128 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (InternalThreadLocalMap.java:57) - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2019-01-28 12:14:21,149 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (ResourceLeakDetector.java:121) - -Dio.netty.leakDetection.level: simple
+2019-01-28 12:14:21,149 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (ResourceLeakDetector.java:122) - -Dio.netty.leakDetection.targetRecords: 4
+2019-01-28 12:14:21,151 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (ResourceLeakDetectorFactory.java:202) - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@20a3cc74
+2019-01-28 12:14:21,189 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (DefaultChannelId.java:79) - -Dio.netty.processId: 21309 (auto-detected)
+2019-01-28 12:14:21,192 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (DefaultChannelId.java:101) - -Dio.netty.machineId: 14:ab:c5:ff:fe:78:8d:90 (auto-detected)
+2019-01-28 12:14:21,224 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:120) - -Dio.netty.allocator.numHeapArenas: 8
+2019-01-28 12:14:21,224 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:121) - -Dio.netty.allocator.numDirectArenas: 8
+2019-01-28 12:14:21,224 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:123) - -Dio.netty.allocator.pageSize: 8192
+2019-01-28 12:14:21,224 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:128) - -Dio.netty.allocator.maxOrder: 11
+2019-01-28 12:14:21,224 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:132) - -Dio.netty.allocator.chunkSize: 16777216
+2019-01-28 12:14:21,225 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:133) - -Dio.netty.allocator.tinyCacheSize: 512
+2019-01-28 12:14:21,225 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:134) - -Dio.netty.allocator.smallCacheSize: 256
+2019-01-28 12:14:21,225 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:135) - -Dio.netty.allocator.normalCacheSize: 64
+2019-01-28 12:14:21,225 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:136) - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2019-01-28 12:14:21,226 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:137) - -Dio.netty.allocator.cacheTrimInterval: 8192
+2019-01-28 12:14:21,226 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (PooledByteBufAllocator.java:138) - -Dio.netty.allocator.useCacheForAllThreads: true
+2019-01-28 12:14:21,233 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (ByteBufUtil.java:83) - -Dio.netty.allocator.type: pooled
+2019-01-28 12:14:21,233 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (ByteBufUtil.java:92) - -Dio.netty.threadLocalDirectBufferSize: 0
+2019-01-28 12:14:21,234 +0700 [New I/O server boss #1 ([id: 0x1963006a, /0:0:0:0:0:0:0:0:6898])] DEBUG (ByteBufUtil.java:95) - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2019-01-28 12:14:21,403 +0700 [New I/O  worker #1] INFO  (WebSocketServerHandler.java:65) - Entry connect HTTP request
+2019-01-28 12:14:21,493 +0700 [New I/O  worker #1] DEBUG (Recycler.java:96) - -Dio.netty.recycler.maxCapacityPerThread: 4096
+2019-01-28 12:14:21,493 +0700 [New I/O  worker #1] DEBUG (Recycler.java:97) - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+2019-01-28 12:14:21,493 +0700 [New I/O  worker #1] DEBUG (Recycler.java:98) - -Dio.netty.recycler.linkCapacity: 16
+2019-01-28 12:14:21,493 +0700 [New I/O  worker #1] DEBUG (Recycler.java:99) - -Dio.netty.recycler.ratio: 8
+2019-01-28 12:14:21,501 +0700 [redisson-netty-4-2] DEBUG (AbstractByteBuf.java:52) - -Dio.netty.buffer.bytebuf.checkAccessible: true
+2019-01-28 12:14:21,502 +0700 [redisson-netty-4-2] DEBUG (ResourceLeakDetectorFactory.java:202) - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@69fc60a3
+2019-01-28 12:14:21,576 +0700 [New I/O  worker #1] INFO  (WebSocketServerHandler.java:160) - Undefine request /loadFriends
+2019-01-28 12:14:28,210 +0700 [New I/O  worker #2] INFO  (WebSocketServerHandler.java:65) - Entry connect HTTP request
+2019-01-28 12:14:28,215 +0700 [New I/O  worker #2] INFO  (WebSocketServerHandler.java:160) - Undefine request /loadFriends
+2019-01-28 12:14:28,382 +0700 [New I/O  worker #3] INFO  (WebSocketServerHandler.java:65) - Entry connect HTTP request
+2019-01-28 12:14:28,382 +0700 [New I/O  worker #3] INFO  (WebSocketServerHandler.java:160) - Undefine request /favicon.ico
+2019-01-28 12:14:36,531 +0700 [New I/O  worker #4] INFO  (WebSocketServerHandler.java:65) - Entry connect HTTP request
+2019-01-28 12:14:36,531 +0700 [New I/O  worker #4] INFO  (WebSocketServerHandler.java:144) - Require handshaker /websocket
+2019-01-28 12:14:36,547 +0700 [New I/O  worker #4] INFO  (WebSocketServerHandler.java:69) - Entry connect socket
+2019-01-28 12:14:36,547 +0700 [New I/O  worker #4] INFO  (WebSocketServerHandler.java:175) - Handle websocket
+2019-01-28 12:14:36,548 +0700 [New I/O  worker #4] INFO  (WebSocketServerHandler.java:212) - Register Hoang:Overnight party
+2019-01-28 12:14:36,548 +0700 [New I/O  worker #4] INFO  (WebSocketServerHandler.java:223) - Register Event: Hoang :835989219
+2019-01-28 12:14:36,549 +0700 [New I/O  worker #4] INFO  (WebSocketServerHandler.java:269) - Broadcast message in conversation Overnight party
+2019-01-28 12:14:36,551 +0700 [New I/O  worker #5] INFO  (WebSocketServerHandler.java:65) - Entry connect HTTP request
+2019-01-28 12:14:36,551 +0700 [New I/O  worker #5] INFO  (WebSocketServerHandler.java:144) - Require handshaker /websocket
+2019-01-28 12:14:36,552 +0700 [New I/O  worker #5] INFO  (WebSocketServerHandler.java:69) - Entry connect socket
+2019-01-28 12:14:36,553 +0700 [New I/O  worker #5] INFO  (WebSocketServerHandler.java:175) - Handle websocket
+2019-01-28 12:14:36,553 +0700 [New I/O  worker #5] INFO  (WebSocketServerHandler.java:212) - Register Linh:Uyển Vy
+2019-01-28 12:14:36,553 +0700 [New I/O  worker #5] INFO  (WebSocketServerHandler.java:223) - Register Event: Linh :1798879528
+2019-01-28 12:14:36,554 +0700 [New I/O  worker #5] INFO  (WebSocketServerHandler.java:269) - Broadcast message in conversation Uyển Vy
+2019-01-28 12:14:36,564 +0700 [New I/O  worker #6] INFO  (WebSocketServerHandler.java:65) - Entry connect HTTP request
+2019-01-28 12:14:36,564 +0700 [New I/O  worker #6] INFO  (WebSocketServerHandler.java:144) - Require handshaker /websocket
+2019-01-28 12:14:36,566 +0700 [New I/O  worker #6] INFO  (WebSocketServerHandler.java:69) - Entry connect socket
+2019-01-28 12:14:36,566 +0700 [New I/O  worker #6] INFO  (WebSocketServerHandler.java:175) - Handle websocket
+2019-01-28 12:14:36,567 +0700 [New I/O  worker #6] INFO  (WebSocketServerHandler.java:212) - Register Akisstan:Uyển Vy
+2019-01-28 12:14:36,567 +0700 [New I/O  worker #6] INFO  (WebSocketServerHandler.java:223) - Register Event: Akisstan :168636893
+2019-01-28 12:14:36,567 +0700 [New I/O  worker #6] INFO  (WebSocketServerHandler.java:269) - Broadcast message in conversation Uyển Vy
+2019-01-28 12:14:36,577 +0700 [New I/O  worker #7] INFO  (WebSocketServerHandler.java:65) - Entry connect HTTP request
+2019-01-28 12:14:36,577 +0700 [New I/O  worker #7] INFO  (WebSocketServerHandler.java:144) - Require handshaker /websocket
+2019-01-28 12:14:36,579 +0700 [New I/O  worker #7] INFO  (WebSocketServerHandler.java:69) - Entry connect socket
+2019-01-28 12:14:36,583 +0700 [New I/O  worker #7] INFO  (WebSocketServerHandler.java:175) - Handle websocket
+2019-01-28 12:14:36,584 +0700 [New I/O  worker #7] INFO  (WebSocketServerHandler.java:212) - Register mtSiniChi:Uyển Vy
+2019-01-28 12:14:36,584 +0700 [New I/O  worker #7] INFO  (WebSocketServerHandler.java:223) - Register Event: mtSiniChi :1147777190
+2019-01-28 12:14:36,587 +0700 [New I/O  worker #7] INFO  (WebSocketServerHandler.java:269) - Broadcast message in conversation Uyển Vy

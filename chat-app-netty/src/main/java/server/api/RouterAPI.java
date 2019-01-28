@@ -4,6 +4,7 @@ import org.apache.log4j.Logger;
 import org.jboss.netty.channel.ChannelHandlerContext;
 import org.jboss.netty.handler.codec.http.HttpRequest;
 
+import static server.api.LoadFriends.handleLoadFriends;
 import static server.api.Login.*;
 import static server.api.Register.handleRegister;
 
@@ -27,6 +28,9 @@ public class RouterAPI {
                 break;
             case "/register":
                 handleRegister(context, request, logger);
+                break;
+            case "/loadFriends":
+                handleLoadFriends(context, request, logger);
                 break;
         }
 

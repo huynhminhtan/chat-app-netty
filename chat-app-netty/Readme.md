@@ -16,7 +16,7 @@
 ### Login
 
 ```
-http://localhost:6898/login
+POST/ http://localhost:6898/login
 
 req
 {
@@ -38,7 +38,7 @@ re / login success
 ### Register
 
 ```
-http://localhost:6898/register
+POST/ http://localhost:6898/register
 
 req
 {
@@ -52,5 +52,15 @@ re / phone is exists
 
 re / register sucess
 {"status":"success","content":{"userName":"mtSiniChi","password":null,"phone":"0999888775"}}
+
+```
+
+### Load Friends
+
+```
+GET/ http://localhost:6898/loadFriends
+
+re
+[{"userName":"mtSiniChi","phone":"0999888771"},{"userName":"mtSiniChi","phone":"0999888775"}]
 
 ```
