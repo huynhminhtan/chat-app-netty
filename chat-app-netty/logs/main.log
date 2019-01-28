@@ -11031,3 +11031,6 @@
 2019-01-28 12:14:36,584 +0700 [New I/O  worker #7] INFO  (WebSocketServerHandler.java:212) - Register mtSiniChi:Uyển Vy
 2019-01-28 12:14:36,584 +0700 [New I/O  worker #7] INFO  (WebSocketServerHandler.java:223) - Register Event: mtSiniChi :1147777190
 2019-01-28 12:14:36,587 +0700 [New I/O  worker #7] INFO  (WebSocketServerHandler.java:269) - Broadcast message in conversation Uyển Vy
+2019-01-28 12:17:51,101 +0700 [New I/O  worker #8] INFO  (WebSocketServerHandler.java:65) - Entry connect HTTP request
+2019-01-28 12:17:56,886 +0700 [New I/O  worker #1] INFO  (WebSocketServerHandler.java:65) - Entry connect HTTP request
+2019-01-28 12:18:04,903 +0700 [New I/O  worker #2] INFO  (WebSocketServerHandler.java:65) - Entry connect HTTP request

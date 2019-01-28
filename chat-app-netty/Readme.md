@@ -50,7 +50,7 @@ req
 re / phone is exists
 {"status":"isExists","content":null}
 
-re / register sucess
+re / register success
 {"status":"success","content":{"userName":"mtSiniChi","password":null,"phone":"0999888775"}}
 
 ```
