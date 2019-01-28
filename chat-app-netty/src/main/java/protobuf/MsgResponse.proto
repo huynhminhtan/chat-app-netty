@@ -1,0 +1,31 @@
+syntax = "proto3";
+package protobuf;
+option java_package = "protobuf";
+
+
+message Conversations {
+    string userCreate = 1;
+    string conversationName = 2;
+}
+
+message ListConversations {
+    repeated Conversations listConversations = 1;
+}
+
+
+message Messages {
+    string userSend = 1;
+    string time = 2;  
+    string content = 3;
+}
+
+message ListMessages {
+	repeated Messages listMessages = 1;
+}
+
+
+/* cd src/java/ */
+/* protoc -I=./protobuf/ --java_out=./ ./protobuf/MessageResponse.proto  */
+
+ // protoc -I=./protobuf/ --java_out=./ ./protobuf/MsgResponse.proto
+
