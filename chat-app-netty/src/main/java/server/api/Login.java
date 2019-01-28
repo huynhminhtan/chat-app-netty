@@ -167,9 +167,9 @@ public class Login {
         Gson gson = new Gson();
         UserDTO user = gson.fromJson(jsonPayload, UserDTO.class);
 
-        System.out.println(user.getPassword());
-        System.out.println(user.getPhone());
-        System.out.println(user.getUserName());
+//        System.out.println(user.getPassword());
+//        System.out.println(user.getPhone());
+//        System.out.println(user.getUserName());
 
 //        RedissonHelper.set("0999888771", new UserDTO("mtSiniChi", "123456", "0999888771"));
 

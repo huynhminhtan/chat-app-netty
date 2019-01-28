@@ -38,4 +38,10 @@ public class UserDTO {
         this.password = password;
         this.phone = phone;
     }
+
+    public UserDTO(String userName, String phone) {
+        this.userName = userName;
+        this.password = null;
+        this.phone = phone;
+    }
 }

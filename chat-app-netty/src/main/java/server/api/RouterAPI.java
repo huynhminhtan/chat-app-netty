@@ -5,6 +5,7 @@ import org.jboss.netty.channel.ChannelHandlerContext;
 import org.jboss.netty.handler.codec.http.HttpRequest;
 
 import static server.api.Login.*;
+import static server.api.Register.handleRegister;
 
 public class RouterAPI {
 
@@ -23,6 +24,9 @@ public class RouterAPI {
                 break;
             case "/login":
                 handleLogin(context, request, logger);
+                break;
+            case "/register":
+                handleRegister(context, request, logger);
                 break;
         }
 
