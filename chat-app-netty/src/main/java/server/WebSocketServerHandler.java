@@ -185,7 +185,7 @@ public class WebSocketServerHandler extends SimpleChannelUpstreamHandler {
         	String username = getUsername(context.getChannel().getId());
         	logger.info("Disconnected: " + username);
         	this.handshaker.close(context.getChannel(), (CloseWebSocketFrame) frame);
-            broadcast(context, this.roomid,"[Server] " + username + " Disconnected");
+//            broadcast(context, this.roomid,"[Server] " + username + " Disconnected");
         } else if (frame instanceof PingWebSocketFrame) {
         	// Pings are primarily used for keep alive
             context.getChannel().write(new PongWebSocketFrame(frame.getBinaryData()));

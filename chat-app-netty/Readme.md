@@ -61,7 +61,16 @@ re / register success
 GET/ http://localhost:6898/loadFriends
 
 re
-[{"userName":"mtSiniChi","phone":"0999888771"},{"userName":"mtSiniChi","phone":"0999888775"}]
+[
+   {
+      "userName":"mtSiniChi",
+      "phone":"0999888771"
+   },
+   {
+      "userName":"Hoai Linh",
+      "phone":"0999888775"
+   }
+]
 
 ```
 
@@ -107,5 +116,23 @@ re
       "conversationName":"Class 12A"
    }
 }
+
+```
+
+###  load all conversations of current user
+
+```
+re
+
+[
+   {
+      "conversationID":"1548745226",
+      "conversationName":"Class 12A"
+   },
+   {
+      "conversationID":"1548745139",
+      "conversationName":"Class 12A"
+   }
+]
 
 ```

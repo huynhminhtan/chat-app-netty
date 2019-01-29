@@ -17,17 +17,24 @@ public class SocketHelper {
      */
 
     public static void broadcast(ChannelHandlerContext context, Map<String, ChannelGroup> channelGroupMap,
-                           String conversationsID, String message) {
+                                 String conversationsID, String message) {
 
 //        logger.info("Broadcast message in conversation " + roomid );
 
-        for (Channel channel: channelGroupMap.get(conversationsID)) {
+        for (Channel channel : channelGroupMap.get(conversationsID)) {
 //            if (channel != context.getChannel()) {
 //                channel.write(new TextWebSocketFrame(message));
 //            }
 
             channel.write(new TextWebSocketFrame(message));
         }
+    }
+
+    public static void broadcastOnlyChannel(ChannelHandlerContext context, String message) {
+
+//        logger.info("Broadcast message in conversation " + roomid );
+
+        context.getChannel().write(new TextWebSocketFrame(message));
     }
 
 }
