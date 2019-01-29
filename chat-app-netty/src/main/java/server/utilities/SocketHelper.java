@@ -38,6 +38,7 @@ public class SocketHelper {
 //            }
 
                 channel.write(new TextWebSocketFrame(message));
+                logger.info("BroadcastMessage to ConversationID: " + conversationsID);
             }
         }
         else {

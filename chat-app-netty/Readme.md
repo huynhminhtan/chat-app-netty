@@ -139,3 +139,31 @@ re
 }
 
 ```
+
+### Send message
+
+```
+req
+
+{
+    messageType: "sendMessage",
+    content: {
+        sender: "0999899111112",
+        content: "Hello world x",
+        conversationID: "1548761179"
+    }
+}
+
+re
+
+{
+   "messageType":"sendMessage",
+   "content":{
+      "sender":"099911112",
+      "content":"Hello world",
+      "time":"1548762247",
+      "conversationID":"1548761179"
+   }
+}
+
+```

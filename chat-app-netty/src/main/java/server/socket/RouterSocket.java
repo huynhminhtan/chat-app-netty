@@ -117,8 +117,12 @@ public class RouterSocket {
                 messagesDTO.getConversationID());
 
         // broadcast message to all channelID in conversationID
-        SocketHelper.broadcast(context, channelGroupMap, messagesDTO.getConversationID(), message);
-        logger.info("BroadcastMessage to ConversationID: " + messagesDTO.getConversationID());
+        SocketDTO.SendMessageResponseDTO sendMessageDTOResponse = new SocketDTO.SendMessageResponseDTO();
+        sendMessageDTOResponse.setContent(messagesDTO);
+        sendMessageDTOResponse.setMessageType("sendMessage");
+
+        String messageResponse = gson.toJson(sendMessageDTOResponse);
+        SocketHelper.broadcast(context, channelGroupMap, messagesDTO.getConversationID(), messageResponse);
     }
 
     private static void firstRequest(ChannelHandlerContext context, String message) {
@@ -179,6 +183,8 @@ public class RouterSocket {
 //            System.out.println("\n");
 //            System.out.println(cvs.getConversationsID() + " " + cvs.getConversationsName() + " " + cvs.getUsers());
         }
+
+        logger.info("Size converstaions of UserID: " + listConversationsResponseDTO.size());
 
         // Update channelID by list conversationID
         for (SocketDTO.LoadAllConversationsForUser cvforUser : listConversationsResponseDTO) {

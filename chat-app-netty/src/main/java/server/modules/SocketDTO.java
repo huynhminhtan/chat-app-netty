@@ -212,4 +212,27 @@ public class SocketDTO {
         private SendMessage content;
     }
 
+    // Response message
+    public static class SendMessageResponseDTO {
+
+        public String getMessageType() {
+            return messageType;
+        }
+
+        public void setMessageType(String messageType) {
+            this.messageType = messageType;
+        }
+
+        public MessagesDTO getContent() {
+            return content;
+        }
+
+        public void setContent(MessagesDTO content) {
+            this.content = content;
+        }
+
+        private String messageType;
+        private MessagesDTO content;
+    }
+
 }

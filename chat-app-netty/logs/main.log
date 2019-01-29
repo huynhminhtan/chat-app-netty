@@ -21740,3 +21740,141 @@ Caused by: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot
 2019-01-29 18:00:03,490 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:110) - SaveMessage:: 'xxxxxxxxxxxxxxxxxxxxx' to Redis
 2019-01-29 18:00:03,494 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:115) - GetMessage from Redis:: 'xxxxxxxxxxxxxxxxxxxxx' in 1548747774
 2019-01-29 18:00:03,495 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:121) - BroadcastMessage to ConversationID: 1548747774
+2019-01-29 18:22:32,080 +0700 [New I/O  worker #4] INFO  (WebSocketServerHandler.java:186) - Disconnected: Unregistered User
+2019-01-29 18:22:38,990 +0700 [main] INFO  (WebSocketServer.java:36) - Netty web socket server started at port 6898!
+2019-01-29 18:22:42,228 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:56) - Socket Router
+2019-01-29 18:22:42,230 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:57) - MessageType: firstRequest
+2019-01-29 18:22:42,231 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:133) - UserID: 9111111111 is first request
+2019-01-29 18:22:42,232 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:212) - UserID: 9111111111 is save to online
+2019-01-29 18:22:42,232 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:147) - Entry load all converstaions of UserID: 9111111111
+2019-01-29 18:23:48,154 +0700 [main] INFO  (WebSocketServer.java:36) - Netty web socket server started at port 6898!
+2019-01-29 18:23:54,642 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:56) - Socket Router
+2019-01-29 18:23:54,643 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:57) - MessageType: firstRequest
+2019-01-29 18:23:54,644 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:133) - UserID: 9111111111 is first request
+2019-01-29 18:23:54,645 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:214) - UserID: 9111111111 is save to online
+2019-01-29 18:23:54,645 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:147) - Entry load all converstaions of UserID: 9111111111
+2019-01-29 18:23:54,746 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:183) - Size converstaions of UserID: 0
+2019-01-29 18:24:09,829 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:56) - Socket Router
+2019-01-29 18:24:09,830 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:57) - MessageType: sendMessage
+2019-01-29 18:24:09,833 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:89) - SendMessage:: UserID: 0999899111112 send message: xxxxxxxxxxxxxxxxxxxxx in conversationID: 1547774
+2019-01-29 18:24:09,889 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:110) - SaveMessage:: 'xxxxxxxxxxxxxxxxxxxxx' to Redis
+2019-01-29 18:24:09,893 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:115) - GetMessage from Redis:: 'xxxxxxxxxxxxxxxxxxxxx' in 1547774
+2019-01-29 18:24:09,894 +0700 [New I/O  worker #1] INFO  (SocketHelper.java:44) - Don't have conversationsID: 1547774 in channelGroupMap
+2019-01-29 18:24:09,894 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:121) - BroadcastMessage to ConversationID: 1547774
+2019-01-29 18:25:40,591 +0700 [main] INFO  (WebSocketServer.java:36) - Netty web socket server started at port 6898!
+2019-01-29 18:25:46,373 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:56) - Socket Router
+2019-01-29 18:25:46,374 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:57) - MessageType: firstRequest
+2019-01-29 18:25:46,375 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:132) - UserID: 9111111111 is first request
+2019-01-29 18:25:46,375 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:213) - UserID: 9111111111 is save to online
+2019-01-29 18:25:46,375 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:146) - Entry load all converstaions of UserID: 9111111111
+2019-01-29 18:25:46,494 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:182) - Size converstaions of UserID: 0
+2019-01-29 18:25:50,346 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:56) - Socket Router
+2019-01-29 18:25:50,348 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:57) - MessageType: sendMessage
+2019-01-29 18:25:50,353 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:89) - SendMessage:: UserID: 0999899111112 send message: xxxxxxxxxxxxxxxxxxxxx in conversationID: 1547774
+2019-01-29 18:25:50,414 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:110) - SaveMessage:: 'xxxxxxxxxxxxxxxxxxxxx' to Redis
+2019-01-29 18:25:50,420 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:115) - GetMessage from Redis:: 'xxxxxxxxxxxxxxxxxxxxx' in 1547774
+2019-01-29 18:25:50,420 +0700 [New I/O  worker #1] INFO  (SocketHelper.java:45) - Don't have conversationsID: 1547774 in channelGroupMap
+2019-01-29 18:26:14,264 +0700 [New I/O  worker #1] INFO  (WebSocketServerHandler.java:186) - Disconnected: Unregistered User
+2019-01-29 18:26:15,254 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:56) - Socket Router
+2019-01-29 18:26:15,256 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:57) - MessageType: firstRequest
+2019-01-29 18:26:15,265 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:132) - UserID: 9111111111 is first request
+2019-01-29 18:26:15,267 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:213) - UserID: 9111111111 is save to online
+2019-01-29 18:26:15,269 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:146) - Entry load all converstaions of UserID: 9111111111
+2019-01-29 18:26:15,308 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:182) - Size converstaions of UserID: 0
+2019-01-29 18:26:19,967 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:56) - Socket Router
+2019-01-29 18:26:19,968 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:57) - MessageType: createConversation
+2019-01-29 18:26:19,968 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:219) - Entry create conversations
+2019-01-29 18:26:19,972 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:228) - Create conversationName: Class 12A
+2019-01-29 18:26:19,974 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:229) - Create conversation for users: [0999899882, 09998991112, 0999899332]
+2019-01-29 18:26:19,990 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:254) - Put new conversation[1548761179,Class 12A] to Redis
+2019-01-29 18:26:19,993 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:288) - Update ChannelGroupMap to save list channelID for new conversation
+2019-01-29 18:26:19,995 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:345) - Broadcast notifi new conversation for user is online
+2019-01-29 18:27:07,664 +0700 [New I/O  worker #2] INFO  (WebSocketServerHandler.java:186) - Disconnected: Unregistered User
+2019-01-29 18:27:08,857 +0700 [New I/O  worker #3] INFO  (RouterSocket.java:56) - Socket Router
+2019-01-29 18:27:08,858 +0700 [New I/O  worker #3] INFO  (RouterSocket.java:57) - MessageType: firstRequest
+2019-01-29 18:27:08,860 +0700 [New I/O  worker #3] INFO  (RouterSocket.java:132) - UserID: 9111111111 is first request
+2019-01-29 18:27:08,861 +0700 [New I/O  worker #3] INFO  (RouterSocket.java:213) - UserID: 9111111111 is save to online
+2019-01-29 18:27:08,863 +0700 [New I/O  worker #3] INFO  (RouterSocket.java:146) - Entry load all converstaions of UserID: 9111111111
+2019-01-29 18:27:08,897 +0700 [New I/O  worker #3] INFO  (RouterSocket.java:182) - Size converstaions of UserID: 0
+2019-01-29 18:27:13,561 +0700 [New I/O  worker #3] INFO  (RouterSocket.java:56) - Socket Router
+2019-01-29 18:27:13,562 +0700 [New I/O  worker #3] INFO  (RouterSocket.java:57) - MessageType: sendMessage
+2019-01-29 18:27:13,563 +0700 [New I/O  worker #3] INFO  (RouterSocket.java:89) - SendMessage:: UserID: 0999899111112 send message: xxxxxxxxxxxxxxxxxxxxx in conversationID: 1547774
+2019-01-29 18:27:13,579 +0700 [New I/O  worker #3] INFO  (RouterSocket.java:110) - SaveMessage:: 'xxxxxxxxxxxxxxxxxxxxx' to Redis
+2019-01-29 18:27:13,584 +0700 [New I/O  worker #3] INFO  (RouterSocket.java:115) - GetMessage from Redis:: 'xxxxxxxxxxxxxxxxxxxxx' in 1547774
+2019-01-29 18:27:13,585 +0700 [New I/O  worker #3] INFO  (SocketHelper.java:45) - Don't have conversationsID: 1547774 in channelGroupMap
+2019-01-29 18:27:25,124 +0700 [New I/O  worker #3] INFO  (WebSocketServerHandler.java:186) - Disconnected: Unregistered User
+2019-01-29 18:27:25,879 +0700 [New I/O  worker #4] INFO  (RouterSocket.java:56) - Socket Router
+2019-01-29 18:27:25,881 +0700 [New I/O  worker #4] INFO  (RouterSocket.java:57) - MessageType: firstRequest
+2019-01-29 18:27:25,885 +0700 [New I/O  worker #4] INFO  (RouterSocket.java:132) - UserID: 9111111111 is first request
+2019-01-29 18:27:25,887 +0700 [New I/O  worker #4] INFO  (RouterSocket.java:213) - UserID: 9111111111 is save to online
+2019-01-29 18:27:25,888 +0700 [New I/O  worker #4] INFO  (RouterSocket.java:146) - Entry load all converstaions of UserID: 9111111111
+2019-01-29 18:27:25,916 +0700 [New I/O  worker #4] INFO  (RouterSocket.java:182) - Size converstaions of UserID: 0
+2019-01-29 18:27:29,415 +0700 [New I/O  worker #4] INFO  (RouterSocket.java:56) - Socket Router
+2019-01-29 18:27:29,416 +0700 [New I/O  worker #4] INFO  (RouterSocket.java:57) - MessageType: sendMessage
+2019-01-29 18:27:29,417 +0700 [New I/O  worker #4] INFO  (RouterSocket.java:89) - SendMessage:: UserID: 0999899111112 send message: xxxxxxxxxxxxxxxxxxxxx in conversationID: 1548761179
+2019-01-29 18:27:29,446 +0700 [New I/O  worker #4] INFO  (RouterSocket.java:110) - SaveMessage:: 'xxxxxxxxxxxxxxxxxxxxx' to Redis
+2019-01-29 18:27:29,451 +0700 [New I/O  worker #4] INFO  (RouterSocket.java:115) - GetMessage from Redis:: 'xxxxxxxxxxxxxxxxxxxxx' in 1548761179
+2019-01-29 18:27:56,666 +0700 [New I/O  worker #4] INFO  (RouterSocket.java:56) - Socket Router
+2019-01-29 18:27:56,668 +0700 [New I/O  worker #4] INFO  (RouterSocket.java:57) - MessageType: sendMessage
+2019-01-29 18:27:56,669 +0700 [New I/O  worker #4] INFO  (RouterSocket.java:89) - SendMessage:: UserID: 0999899111112 send message: xxxxxxxxxxxxxxxxxxxxx in conversationID: 1548761179
+2019-01-29 18:27:56,682 +0700 [New I/O  worker #4] INFO  (RouterSocket.java:110) - SaveMessage:: 'xxxxxxxxxxxxxxxxxxxxx' to Redis
+2019-01-29 18:27:56,688 +0700 [New I/O  worker #4] INFO  (RouterSocket.java:115) - GetMessage from Redis:: 'xxxxxxxxxxxxxxxxxxxxx' in 1548761179
+2019-01-29 18:30:10,346 +0700 [main] INFO  (WebSocketServer.java:36) - Netty web socket server started at port 6898!
+2019-01-29 18:37:40,620 +0700 [main] INFO  (WebSocketServer.java:36) - Netty web socket server started at port 6898!
+2019-01-29 18:37:53,793 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:56) - Socket Router
+2019-01-29 18:37:53,794 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:57) - MessageType: firstRequest
+2019-01-29 18:37:53,795 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:133) - UserID: 9111111111 is first request
+2019-01-29 18:37:53,796 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:214) - UserID: 9111111111 is save to online
+2019-01-29 18:37:53,796 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:147) - Entry load all converstaions of UserID: 9111111111
+2019-01-29 18:37:53,909 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:183) - Size converstaions of UserID: 0
+2019-01-29 18:37:56,697 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:56) - Socket Router
+2019-01-29 18:37:56,699 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:57) - MessageType: sendMessage
+2019-01-29 18:37:56,706 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:89) - SendMessage:: UserID: 0999899111112 send message: xxxxxxxxxxxxxxxxxxxxx in conversationID: 1548761179
+2019-01-29 18:37:56,801 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:110) - SaveMessage:: 'xxxxxxxxxxxxxxxxxxxxx' to Redis
+2019-01-29 18:37:56,808 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:115) - GetMessage from Redis:: 'xxxxxxxxxxxxxxxxxxxxx' in 1548761179
+2019-01-29 18:37:56,809 +0700 [New I/O  worker #1] INFO  (SocketHelper.java:45) - Don't have conversationsID: 1548761179 in channelGroupMap
+2019-01-29 18:38:12,175 +0700 [New I/O  worker #1] INFO  (WebSocketServerHandler.java:186) - Disconnected: Unregistered User
+2019-01-29 18:38:12,814 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:56) - Socket Router
+2019-01-29 18:38:12,815 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:57) - MessageType: firstRequest
+2019-01-29 18:38:12,825 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:133) - UserID: 09998991112 is first request
+2019-01-29 18:38:12,827 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:214) - UserID: 09998991112 is save to online
+2019-01-29 18:38:12,828 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:147) - Entry load all converstaions of UserID: 09998991112
+2019-01-29 18:38:12,883 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:164) - UserID: 09998991112 have conversationID: 1548747664
+2019-01-29 18:38:12,885 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:164) - UserID: 09998991112 have conversationID: 1548747714
+2019-01-29 18:38:12,887 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:164) - UserID: 09998991112 have conversationID: 1548745226
+2019-01-29 18:38:12,894 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:164) - UserID: 09998991112 have conversationID: 1548761179
+2019-01-29 18:38:12,895 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:164) - UserID: 09998991112 have conversationID: 1548747774
+2019-01-29 18:38:12,898 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:164) - UserID: 09998991112 have conversationID: 1548746258
+2019-01-29 18:38:12,901 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:164) - UserID: 09998991112 have conversationID: 1548747755
+2019-01-29 18:38:12,905 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:164) - UserID: 09998991112 have conversationID: 1548747815
+2019-01-29 18:38:12,906 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:164) - UserID: 09998991112 have conversationID: 1548745139
+2019-01-29 18:38:12,911 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:183) - Size converstaions of UserID: 9
+2019-01-29 18:38:17,946 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:56) - Socket Router
+2019-01-29 18:38:17,947 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:57) - MessageType: sendMessage
+2019-01-29 18:38:17,947 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:89) - SendMessage:: UserID: 0999899111112 send message: xxxxxxxxxxxxxxxxxxxxx in conversationID: 1548761179
+2019-01-29 18:38:17,950 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:110) - SaveMessage:: 'xxxxxxxxxxxxxxxxxxxxx' to Redis
+2019-01-29 18:38:17,952 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:115) - GetMessage from Redis:: 'xxxxxxxxxxxxxxxxxxxxx' in 1548761179
+2019-01-29 18:38:17,956 +0700 [New I/O  worker #2] INFO  (SocketHelper.java:41) - BroadcastMessage to ConversationID: 1548761179
+2019-01-29 18:43:57,129 +0700 [main] INFO  (WebSocketServer.java:36) - Netty web socket server started at port 6898!
+2019-01-29 18:44:04,741 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:56) - Socket Router
+2019-01-29 18:44:04,742 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:57) - MessageType: firstRequest
+2019-01-29 18:44:04,743 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:137) - UserID: 09998991112 is first request
+2019-01-29 18:44:04,744 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:218) - UserID: 09998991112 is save to online
+2019-01-29 18:44:04,744 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:151) - Entry load all converstaions of UserID: 09998991112
+2019-01-29 18:44:04,881 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:168) - UserID: 09998991112 have conversationID: 1548747664
+2019-01-29 18:44:04,881 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:168) - UserID: 09998991112 have conversationID: 1548747714
+2019-01-29 18:44:04,882 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:168) - UserID: 09998991112 have conversationID: 1548745226
+2019-01-29 18:44:04,882 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:168) - UserID: 09998991112 have conversationID: 1548761179
+2019-01-29 18:44:04,882 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:168) - UserID: 09998991112 have conversationID: 1548747774
+2019-01-29 18:44:04,882 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:168) - UserID: 09998991112 have conversationID: 1548746258
+2019-01-29 18:44:04,883 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:168) - UserID: 09998991112 have conversationID: 1548747755
+2019-01-29 18:44:04,883 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:168) - UserID: 09998991112 have conversationID: 1548747815
+2019-01-29 18:44:04,883 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:168) - UserID: 09998991112 have conversationID: 1548745139
+2019-01-29 18:44:04,883 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:187) - Size converstaions of UserID: 9
+2019-01-29 18:44:07,517 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:56) - Socket Router
+2019-01-29 18:44:07,517 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:57) - MessageType: sendMessage
+2019-01-29 18:44:07,518 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:89) - SendMessage:: UserID: 0999899111112 send message: xxxxxxxxxxxxxxxxxxxxx in conversationID: 1548761179
+2019-01-29 18:44:07,542 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:110) - SaveMessage:: 'xxxxxxxxxxxxxxxxxxxxx' to Redis
+2019-01-29 18:44:07,547 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:115) - GetMessage from Redis:: 'xxxxxxxxxxxxxxxxxxxxx' in 1548761179
+2019-01-29 18:44:07,550 +0700 [New I/O  worker #1] INFO  (SocketHelper.java:41) - BroadcastMessage to ConversationID: 1548761179
+2019-01-29 18:45:54,321 +0700 [New I/O  worker #1] INFO  (WebSocketServerHandler.java:186) - Disconnected: Unregistered User
