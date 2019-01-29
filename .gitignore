@@ -7,27 +7,27 @@ chat-app-netty/target
 chat-app-netty/.idea/
 
 # User-specific stuff
-./chat-app-netty/idea/**/workspace.xml
-./chat-app-netty/idea/**/tasks.xml
-./chat-app-netty/idea/**/usage.statistics.xml
-./chat-app-netty/idea/**/dictionaries
-./chat-app-netty/idea/**/shelf
+chat-app-netty/idea/**/workspace.xml
+chat-app-netty/idea/**/tasks.xml
+chat-app-netty/idea/**/usage.statistics.xml
+chat-app-netty/idea/**/dictionaries
+chat-app-netty/idea/**/shelf
 
 # Generated files
 ./chat-app-netty/idea/**/contentModel.xml
 
 # Sensitive or high-churn files
-./chat-app-netty/idea/**/dataSources/
-./chat-app-netty/idea/**/dataSources.ids
-./chat-app-netty/idea/**/dataSources.local.xml
-./chat-app-netty/idea/**/sqlDataSources.xml
-./chat-app-netty/idea/**/dynamic.xml
-./chat-app-netty/idea/**/uiDesigner.xml
-./chat-app-netty/idea/**/dbnavigator.xml
+chat-app-netty/idea/**/dataSources/
+chat-app-netty/idea/**/dataSources.ids
+chat-app-netty/idea/**/dataSources.local.xml
+chat-app-netty/idea/**/sqlDataSources.xml
+chat-app-netty/idea/**/dynamic.xml
+chat-app-netty/idea/**/uiDesigner.xml
+chat-app-netty/idea/**/dbnavigator.xml
 
 # Gradle
-./chat-app-netty/idea/**/gradle.xml
-./chat-app-netty/idea/**/libraries
+chat-app-netty/idea/**/gradle.xml
+chat-app-netty/idea/**/libraries
 
 # Gradle and Maven with auto-import
 # When using Gradle or Maven with auto-import, you should exclude module files,
@@ -41,7 +41,7 @@ chat-app-netty/.idea/
 cmake-build-*/
 
 # Mongo Explorer plugin
-./chat-app-netty/idea/**/mongoSettings.xml
+chat-app-netty/idea/**/mongoSettings.xml
 
 # File-based project format
 *./chat-app-netty/iws
