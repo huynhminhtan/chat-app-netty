@@ -158,4 +158,58 @@ public class SocketDTO {
         private ArrayList<LoadAllConversationsForUser> content;
     }
 
+    // Send message
+
+    public static class SendMessage {
+        public String getSender() {
+            return sender;
+        }
+
+        public void setSender(String sender) {
+            this.sender = sender;
+        }
+
+        public String getContent() {
+            return content;
+        }
+
+        public void setContent(String content) {
+            this.content = content;
+        }
+
+        public String getConversationID() {
+            return conversationID;
+        }
+
+        public void setConversationID(String conversationID) {
+            this.conversationID = conversationID;
+        }
+
+        private String sender;
+            private String content;
+            private String conversationID;
+    }
+
+    public static class SendMessageDTO {
+
+        public String getMessageType() {
+            return messageType;
+        }
+
+        public void setMessageType(String messageType) {
+            this.messageType = messageType;
+        }
+
+        public SendMessage getContent() {
+            return content;
+        }
+
+        public void setContent(SendMessage content) {
+            this.content = content;
+        }
+
+        private String messageType;
+        private SendMessage content;
+    }
+
 }

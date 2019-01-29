@@ -12,6 +12,7 @@ import org.jboss.netty.channel.group.DefaultChannelGroup;
 import org.redisson.api.RMap;
 import server.WebSocketServer;
 import server.modules.ConversationsDTO;
+import server.modules.MessagesDTO;
 import server.modules.SocketDTO;
 import server.utilities.RedissonHelper;
 import server.utilities.SocketHelper;
@@ -34,6 +35,7 @@ public class RouterSocket {
     private static Map<String, ChannelGroup> userOnlines = new ConcurrentHashMap<String, ChannelGroup>();
     private static RMap<String, ConversationsDTO> conversationsDTORMap =
             RedissonHelper.getRedisson().getMap("CONVERSATIONS");
+    private static RMap<String, MessagesDTO> messagesDTORMap;
 
 //    private static Map<String, ChannelGroup> channelGroupMap = new ConcurrentHashMap<String, ChannelGroup>();
 
@@ -61,6 +63,9 @@ public class RouterSocket {
                 case "createConversation":
                     createConversation(context, message);
                     break;
+                case "sendMessage":
+                    sendMessage(context, message);
+                    break;
 
             }
 
@@ -69,6 +74,51 @@ public class RouterSocket {
         }
 
 
+    }
+
+    private static void sendMessage(ChannelHandlerContext context, String message) {
+
+        SocketDTO.SendMessageDTO sendMessageDTO =
+                gson.fromJson(message, SocketDTO.SendMessageDTO.class);
+        SocketDTO.SendMessage content = sendMessageDTO.getContent();
+
+        String sender = content.getSender();
+        String userMessage = content.getContent();
+        String conversationID = content.getConversationID();
+
+        logger.info("SendMessage:: UserID: " + sender +
+                " send message: " + userMessage +
+                " in conversationID: " + conversationID);
+
+        // Save to Redis
+        messagesDTORMap = RedissonHelper.getRedisson().getMap(conversationID);
+
+        //// Create instance message
+        MessagesDTO messagesDTO = new MessagesDTO();
+        messagesDTO.setSender(sender);
+        messagesDTO.setContent(userMessage);
+        messagesDTO.setConversationID(conversationID);
+        String time = String.valueOf(System.currentTimeMillis() / 1000);
+        messagesDTO.setTime(time);
+
+        String key = messagesDTO.getTime() + messagesDTO.getSender();
+
+        if (!messagesDTORMap.containsKey(key)) {
+
+            // Save to Redis
+            messagesDTORMap.put(key, messagesDTO);
+            logger.info("SaveMessage:: '" + messagesDTO.getContent() + "' to Redis");
+        }
+
+        // Get message from Redis (option)
+        messagesDTO = messagesDTORMap.get(key);
+        logger.info("GetMessage from Redis:: '" +
+                messagesDTO.getContent() + "' in " +
+                messagesDTO.getConversationID());
+
+        // broadcast message to all channelID in conversationID
+        SocketHelper.broadcast(context, channelGroupMap, messagesDTO.getConversationID(), message);
+        logger.info("BroadcastMessage to ConversationID: " + messagesDTO.getConversationID());
     }
 
     private static void firstRequest(ChannelHandlerContext context, String message) {
@@ -109,7 +159,6 @@ public class RouterSocket {
 
             if (!cvs.getUsers().isEmpty()) {
                 for (String uID : cvs.getUsers()) {
-//                System.out.println(userID);
 
                     if (uID.equals(userID)) {
                         logger.info("UserID: " + userID + " have conversationID: " + cvs.getConversationsID());
@@ -131,6 +180,18 @@ public class RouterSocket {
 //            System.out.println(cvs.getConversationsID() + " " + cvs.getConversationsName() + " " + cvs.getUsers());
         }
 
+        // Update channelID by list conversationID
+        for (SocketDTO.LoadAllConversationsForUser cvforUser : listConversationsResponseDTO) {
+            String cvID = cvforUser.getConversationID();
+
+            if(!channelGroupMap.containsKey(cvID)) {
+                channelGroupMap.put(cvID, new DefaultChannelGroup());
+            }
+
+            channelGroupMap.get(cvID).add(context.getChannel());
+        }
+
+        // Sent all conversations to client
         SocketDTO.LoadAllConversationsForUserDTO loadAllConversationsForUserDTO =
                 new SocketDTO.LoadAllConversationsForUserDTO();
 

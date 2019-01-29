@@ -5,6 +5,7 @@ import org.jboss.netty.channel.ChannelHandlerContext;
 import org.jboss.netty.handler.codec.http.HttpRequest;
 
 import static server.api.LoadFriends.handleLoadFriends;
+import static server.api.Messages.loadMessagesByConversationID;
 import static server.api.Login.*;
 import static server.api.Register.handleRegister;
 
@@ -31,6 +32,9 @@ public class RouterAPI {
                 break;
             case "/loadFriends":
                 handleLoadFriends(context, request, logger);
+                break;
+            case "/loadMessagesByConversationID":
+                loadMessagesByConversationID(context, request);
                 break;
         }
 
