@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18e2dd3c-56e6-43d5-be7b-ee214240a46d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/main.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/main.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/WebSocketServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/WebSocketServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/WebSocketServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/WebSocketServerHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/modules/SocketDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/modules/SocketDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/socket/RouterSocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/socket/RouterSocket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chat-app-netty.zip" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -53,16 +47,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Readme.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="135" column="33" selection-start-line="135" selection-start-column="33" selection-end-line="135" selection-end-column="33" />
+            <state relative-caret-position="304">
+              <caret line="126" column="1" lean-forward="true" selection-start-line="126" selection-start-column="1" selection-end-line="126" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/server/WebSocketServerHandler.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="278">
@@ -70,25 +64,6 @@
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2021#2043#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/server/modules/ConversationsResponseDTO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="29" column="5" selection-start-line="3" selection-start-column="3" selection-end-line="29" selection-end-column="5" />
-              <folding>
-                <element signature="e#103#104#0" expanded="true" />
-                <element signature="e#140#141#0" expanded="true" />
-                <element signature="e#200#201#0" expanded="true" />
-                <element signature="e#252#253#0" expanded="true" />
-                <element signature="e#295#296#0" expanded="true" />
-                <element signature="e#334#335#0" expanded="true" />
-                <element signature="e#398#399#0" expanded="true" />
-                <element signature="e#454#455#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -399,7 +374,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548750736879" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548751438130" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/server" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -560,7 +535,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1417" y="-4" width="1309" height="772" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
@@ -569,12 +543,12 @@
       <window_info id="Image Layers" order="4" />
       <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.4966443" visible="true" weight="0.30799684" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" weight="0.27751938" />
+      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.3116279" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.501182" side_tool="true" weight="0.4" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.32868218" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" weight="0.39689922" />
-      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.49881798" visible="true" weight="0.42635658" />
+      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.49881798" weight="0.42635658" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
@@ -872,34 +846,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/server/modules/ConversationsResponseDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="29" column="5" selection-start-line="3" selection-start-column="3" selection-end-line="29" selection-end-column="5" />
-          <folding>
-            <element signature="e#103#104#0" expanded="true" />
-            <element signature="e#140#141#0" expanded="true" />
-            <element signature="e#200#201#0" expanded="true" />
-            <element signature="e#252#253#0" expanded="true" />
-            <element signature="e#295#296#0" expanded="true" />
-            <element signature="e#334#335#0" expanded="true" />
-            <element signature="e#398#399#0" expanded="true" />
-            <element signature="e#454#455#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/server/WebSocketServerHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="48" column="60" selection-start-line="48" selection-start-column="60" selection-end-line="48" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2021#2043#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/server/modules/SocketDTO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
@@ -961,8 +907,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Readme.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="135" column="33" selection-start-line="135" selection-start-column="33" selection-end-line="135" selection-end-column="33" />
+        <state relative-caret-position="304">
+          <caret line="126" column="1" lean-forward="true" selection-start-line="126" selection-start-column="1" selection-end-line="126" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/modules/ConversationsResponseDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="37" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="37" />
+          <folding>
+            <element signature="e#103#104#0" expanded="true" />
+            <element signature="e#140#141#0" expanded="true" />
+            <element signature="e#200#201#0" expanded="true" />
+            <element signature="e#252#253#0" expanded="true" />
+            <element signature="e#295#296#0" expanded="true" />
+            <element signature="e#334#335#0" expanded="true" />
+            <element signature="e#398#399#0" expanded="true" />
+            <element signature="e#454#455#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/WebSocketServerHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="48" column="60" selection-start-line="48" selection-start-column="60" selection-end-line="48" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2021#2043#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
