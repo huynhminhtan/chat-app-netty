@@ -119,20 +119,23 @@ re
 
 ```
 
-###  load all conversations of current user
+###  Load all conversations of current user
 
 ```
 re
 
-[
-   {
-      "conversationID":"1548745226",
-      "conversationName":"Class 12A"
-   },
-   {
-      "conversationID":"1548745139",
-      "conversationName":"Class 12A"
-   }
-]
+{
+   "messageType":"loadAllConversationsForUser",
+   "content":[
+      {
+         "conversationID":"1548747664",
+         "conversationName":"Class 12A"
+      },
+      {
+         "conversationID":"1548747714",
+         "conversationName":"Trip fun"
+      }
+   ]
+}
 
 ```

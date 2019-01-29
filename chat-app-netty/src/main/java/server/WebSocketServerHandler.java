@@ -68,11 +68,11 @@ public class WebSocketServerHandler extends SimpleChannelUpstreamHandler {
     public void messageReceived(ChannelHandlerContext context, MessageEvent event) throws Exception {
         Object message = event.getMessage();
         if (message instanceof HttpRequest) {
-            logger.info("Entry connect HTTP request");
+//            logger.info("Entry connect HTTP request");
             handleHttpRequest(context, (HttpRequest) message);
         } else if (message instanceof WebSocketFrame) {
 
-            logger.info("Entry connect socket");
+//            logger.info("Entry connect socket");
             handleWebSocketFrame(context, (WebSocketFrame) message);
         }
     }
@@ -147,7 +147,7 @@ public class WebSocketServerHandler extends SimpleChannelUpstreamHandler {
 
         if (request.getUri().equals("/websocket") || request.getUri().equals("/websocket/?EIO=3&transport=websocket")  ) {
 
-            logger.info("Require handshaker " + request.getUri());
+//            logger.info("Require handshaker " + request.getUri());
 
             // This is a web socket handshake request
             WebSocketServerHandshakerFactory handshakerFactory = new WebSocketServerHandshakerFactory(this.getWebSocketLocation(request), null, false);
@@ -163,7 +163,7 @@ public class WebSocketServerHandler extends SimpleChannelUpstreamHandler {
             }
         } else {
 
-            logger.info("Undefine request " + request.getUri());
+//            logger.info("Undefine request " + request.getUri());
 
             // Ignore anything except web socket handshake requests
             HttpHelper.sendHttpResponse(context, request, new DefaultHttpResponse(HTTP_1_1, FORBIDDEN));
@@ -178,7 +178,7 @@ public class WebSocketServerHandler extends SimpleChannelUpstreamHandler {
      */
     private void handleWebSocketFrame(ChannelHandlerContext context, WebSocketFrame frame) {
 
-        logger.info("Handle websocket");
+//        logger.info("Handle websocket");
 
         if (frame instanceof CloseWebSocketFrame) {
         	// Close the connection
@@ -287,7 +287,7 @@ public class WebSocketServerHandler extends SimpleChannelUpstreamHandler {
 
     private void broadcast(ChannelHandlerContext context, String roomid, String message) {
 
-        logger.info("Broadcast message in conversation " + roomid );
+//        logger.info("Broadcast message in conversation " + roomid );
 
         for (Channel channel: channelGroupMap.get(roomid)) {
             if (channel != context.getChannel()) {

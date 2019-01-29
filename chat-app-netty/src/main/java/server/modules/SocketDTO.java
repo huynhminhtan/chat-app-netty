@@ -105,4 +105,57 @@ public class SocketDTO {
         private String userID;
     }
 
+    // Load all conversations for user
+    public static class LoadAllConversationsForUser {
+        public String getConversationID() {
+            return conversationID;
+        }
+
+        public void setConversationID(String conversationID) {
+            this.conversationID = conversationID;
+        }
+
+        public String getConversationName() {
+            return conversationName;
+        }
+
+        public void setConversationName(String conversationName) {
+            this.conversationName = conversationName;
+        }
+
+        private String conversationID;
+        private String conversationName;
+
+        public LoadAllConversationsForUser() {
+
+        }
+
+        public LoadAllConversationsForUser(String conversationID, String conversationName) {
+            this.conversationID = conversationID;
+            this.conversationName = conversationName;
+        }
+    }
+
+    public static class LoadAllConversationsForUserDTO {
+
+        public String getMessageType() {
+            return messageType;
+        }
+
+        public void setMessageType(String messageType) {
+            this.messageType = messageType;
+        }
+
+        public ArrayList<LoadAllConversationsForUser> getContent() {
+            return content;
+        }
+
+        public void setContent(ArrayList<LoadAllConversationsForUser> content) {
+            this.content = content;
+        }
+
+        private String messageType;
+        private ArrayList<LoadAllConversationsForUser> content;
+    }
+
 }

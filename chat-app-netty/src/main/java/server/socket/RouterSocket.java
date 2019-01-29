@@ -4,29 +4,36 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;
 import org.apache.log4j.Logger;
+import org.apache.log4j.xml.DOMConfigurator;
 import org.jboss.netty.channel.Channel;
 import org.jboss.netty.channel.ChannelHandlerContext;
 import org.jboss.netty.channel.group.ChannelGroup;
 import org.jboss.netty.channel.group.DefaultChannelGroup;
 import org.redisson.api.RMap;
+import server.WebSocketServer;
 import server.modules.ConversationsDTO;
-import server.modules.ConversationsResponseDTO;
 import server.modules.SocketDTO;
 import server.utilities.RedissonHelper;
 import server.utilities.SocketHelper;
 
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class RouterSocket {
+    static {
+        init();
+    }
+
+    private final static Logger logger = Logger.getLogger(RouterSocket.class);
+
     private static Gson gson = new GsonBuilder().serializeNulls().create();
     private static Map<String, ChannelGroup> channelGroupMap = new ConcurrentHashMap<String, ChannelGroup>();
     private static Map<String, ChannelGroup> userOnlines = new ConcurrentHashMap<String, ChannelGroup>();
     private static RMap<String, ConversationsDTO> conversationsDTORMap =
             RedissonHelper.getRedisson().getMap("CONVERSATIONS");
-    ;
 
 //    private static Map<String, ChannelGroup> channelGroupMap = new ConcurrentHashMap<String, ChannelGroup>();
 
@@ -42,14 +49,17 @@ public class RouterSocket {
             SocketDTO.SocketRequestTypeDTO socketRequestTypeDTO = gson.fromJson(message, SocketDTO.SocketRequestTypeDTO.class);
             messageType = socketRequestTypeDTO.getMessageType();
 
-            System.out.println("MessageType: " + socketRequestTypeDTO.getMessageType());
+//            System.out.println("MessageType: " + socketRequestTypeDTO.getMessageType());
+
+            logger.info("Socket Router");
+            logger.info("MessageType: " + socketRequestTypeDTO.getMessageType());
 
             switch (messageType) {
                 case "firstRequest":
-                    firstRequest(context, message, logger);
+                    firstRequest(context, message);
                     break;
                 case "createConversation":
-                    createConversation(context, message, logger);
+                    createConversation(context, message);
                     break;
 
             }
@@ -61,7 +71,7 @@ public class RouterSocket {
 
     }
 
-    private static void firstRequest(ChannelHandlerContext context, String message, Logger logger) {
+    private static void firstRequest(ChannelHandlerContext context, String message) {
 //        System.out.println("first request");
 //        System.out.println(message);
 
@@ -69,6 +79,8 @@ public class RouterSocket {
                 gson.fromJson(message, SocketDTO.SocketFirstRequestDTO.class);
         SocketDTO.SocketFirstRequest content = socketFirstRequestDTO.getContent();
         String userID = content.getUserID();
+
+        logger.info("UserID: " + userID + " is first request");
 
 //        System.out.println(content.getUserID());
 
@@ -82,7 +94,9 @@ public class RouterSocket {
 
     private static void loadAllConversationsForUser(ChannelHandlerContext context, String userID) {
 
-        ArrayList<ConversationsResponseDTO> listConversationsResponseDTO = new ArrayList<>();
+        logger.info("Entry load all converstaions of UserID: " + userID);
+
+        ArrayList<SocketDTO.LoadAllConversationsForUser> listConversationsResponseDTO = new ArrayList<>();
 
         Set<Map.Entry<String, ConversationsDTO>> allEntries = conversationsDTORMap.readAllEntrySet();
 
@@ -92,15 +106,24 @@ public class RouterSocket {
             ConversationsDTO cvs = entry.getValue();
 
             // get list conversations of current user
-            for (String uID : cvs.getUsers()) {
+
+            if (!cvs.getUsers().isEmpty()) {
+                for (String uID : cvs.getUsers()) {
 //                System.out.println(userID);
 
-                if (uID.equals(userID)) {
-                    listConversationsResponseDTO.add(
-                            new ConversationsResponseDTO(cvs.getConversationsID(), cvs.getConversationsName())
-                    );
-                }
+                    if (uID.equals(userID)) {
+                        logger.info("UserID: " + userID + " have conversationID: " + cvs.getConversationsID());
+                        listConversationsResponseDTO.add(
+                                new SocketDTO.LoadAllConversationsForUser(
+                                        cvs.getConversationsID(),
+                                        cvs.getConversationsName()
+                                )
+                        );
+                    }
 
+                }
+            } else {
+                logger.info("ConversationsID: " + cvs.getConversationsID() + " is empty");
             }
 
 //            listUsers.add(new UserResponseDTO(user.getUserName(), user.getPhone()));
@@ -108,7 +131,13 @@ public class RouterSocket {
 //            System.out.println(cvs.getConversationsID() + " " + cvs.getConversationsName() + " " + cvs.getUsers());
         }
 
-        String resContent = gson.toJson(listConversationsResponseDTO);
+        SocketDTO.LoadAllConversationsForUserDTO loadAllConversationsForUserDTO =
+                new SocketDTO.LoadAllConversationsForUserDTO();
+
+        loadAllConversationsForUserDTO.setMessageType("loadAllConversationsForUser");
+        loadAllConversationsForUserDTO.setContent(listConversationsResponseDTO);
+
+        String resContent = gson.toJson(loadAllConversationsForUserDTO);
         SocketHelper.broadcastOnlyChannel(context, resContent);
 
     }
@@ -119,17 +148,24 @@ public class RouterSocket {
         }
 
         userOnlines.get(userID).add(context.getChannel());
+        logger.info("UserID: " + userID + " is save to online");
+
     }
 
-    private static void createConversation(ChannelHandlerContext context, String message, Logger logger) {
+    private static void createConversation(ChannelHandlerContext context, String message) {
 
+        logger.info("Entry create conversations");
 
         SocketDTO.SocketCreateConversationDTO socketCreateConversationDTO =
                 gson.fromJson(message, SocketDTO.SocketCreateConversationDTO.class);
         SocketDTO.SocketCreateConversation content = socketCreateConversationDTO.getContent();
 
-        System.out.println(content.getConversationName());
-        System.out.println(content.getUsers());
+//        System.out.println(content.getConversationName());
+//        System.out.println(content.getUsers());
+
+        logger.info("Create conversationName: " + content.getConversationName());
+        logger.info("Create conversation for users: " + content.getUsers());
+
 
         // save conversations for all user
 //        conversationsDTORMap = RedissonHelper.getRedisson().getMap("CONVERSATIONS");
@@ -153,6 +189,10 @@ public class RouterSocket {
 
             // save to redis
             conversationsDTORMap.put(cv.getConversationsID(), cv);
+            logger.info("Put new conversation["
+                    + cv.getConversationsID() + ","
+                    + cv.getConversationsName() + "] to Redis");
+
 
             // response
             // getRBucket user from redis
@@ -162,8 +202,6 @@ public class RouterSocket {
 //            System.out.println(userLogin.getConversationsID());
 //            System.out.println(userLogin.getUsers());
         }
-        System.out.println("xxxx");
-
 
         // get list channelID for user of new conversation
         ConversationsDTO conversationsDTO = conversationsDTORMap.get(cv.getConversationsID());
@@ -172,24 +210,20 @@ public class RouterSocket {
 
         for (String userID : conversationsDTO.getUsers()) {
 
-            System.out.println("1x");
-
             if (userOnlines.containsKey(userID)) {
                 for (Channel channel : userOnlines.get(userID)) {
 
-                    System.out.println("xx22222xx");
-
                     listChannelForNewConversation.add(channel);
+                    logger.info("Add channelID: " + channel + " to list channel for new conversation");
                 }
             }
         }
-
 
         // update channelGroupMap
 //        channelGroupMap.get(cv.getConversationsID()).
         if (!channelGroupMap.containsKey(cv.getConversationsID())) {
 
-            System.out.println("Update channelGroupMap");
+            logger.info("Update ChannelGroupMap to save list channelID for new conversation");
             channelGroupMap.put(cv.getConversationsID(), listChannelForNewConversation);
         }
 
@@ -245,7 +279,16 @@ public class RouterSocket {
 //        data = gson.toJson(data);
         JsonObject convertedObject = new Gson().fromJson(data, JsonObject.class);
 
-        // broadcast notifi have new conversation
+        // broadcast notifi new conversation
+        logger.info("Broadcast notifi new conversation for user is online");
         SocketHelper.broadcast(context, channelGroupMap, cv.getConversationsID(), convertedObject.toString());
+    }
+
+    /**
+     * method to init log4j configurations
+     */
+    private static void init() {
+        URL u = WebSocketServer.class.getClassLoader().getResource("./log4j.xml");
+        DOMConfigurator.configure(u);
     }
 }

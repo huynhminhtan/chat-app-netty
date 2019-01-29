@@ -33,7 +33,7 @@ public class WebSocketServer {
         // Start processing messages
         bootstrap.bind(new InetSocketAddress(port));
 
-        logger.debug("Netty web socket server started at port " + port + '!');
+        logger.info("Netty web socket server started at port " + port + '!');
     }
 
     public static void main(String[] args) {
