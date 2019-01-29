@@ -74,6 +74,40 @@ re
 
 ```
 
+### Load messages by conversationID
+
+```
+req
+
+{
+	"conversationID": "1548761179"
+}
+
+re
+
+[
+   {
+      "sender":"0999899111112",
+      "content":"xxxxxxxxxxxxxxxxxxxxx",
+      "time":"1548761249",
+      "conversationID":"1548761179"
+   },
+   {
+      "sender":"0999899111112",
+      "content":"xxxxxxxxxxxxxxxxxxxxx",
+      "time":"1548761897",
+      "conversationID":"1548761179"
+   },
+   {
+      "sender":"0999899111112",
+      "content":"xxxxxxxxxxxxxxxxxxxxx",
+      "time":"1548762247",
+      "conversationID":"1548761179"
+   }
+]
+
+```
+
 ## Socket
 
 ### First request

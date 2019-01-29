@@ -15,6 +15,9 @@ import server.utilities.HttpHelper;
 import server.utilities.RedissonHelper;
 
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.Map;
+import java.util.Set;
 
 public class Messages {
 
@@ -40,11 +43,25 @@ public class Messages {
         logger.info("Entry get messages for conversationID: " + conversationID);
 
         // get messages by conversationID from Redis
+        ArrayList<MessagesDTO> listMessages = new ArrayList<>();
         messagesDTORMap = RedissonHelper.getRedisson().getMap(conversationID);
 
+        Set<Map.Entry<String, MessagesDTO>> allEntries = messagesDTORMap.readAllEntrySet();
+
+        for (Map.Entry<String, MessagesDTO> entry : allEntries) {
+//            String key = entry.getKey();
+            MessagesDTO message = entry.getValue();
+
+            listMessages.add(message);
+        }
+
+        logger.info("Size of list messages by conversationID: " + listMessages.size());
 
         // response to client
-        HttpHelper.sendHttpResponse(context, request, "okay");
+        String resContent = gson.toJson(listMessages);
+        HttpHelper.sendHttpResponse(context, request, resContent);
+        logger.info("Response list messages to channelID: " + context.getChannel().getId());
+
         return;
     }
 
