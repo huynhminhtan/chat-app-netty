@@ -77,6 +77,9 @@ re
 ### Load messages by conversationID
 
 ```
+
+POST/ http://localhost:6898/loadMessagesByConversationID
+
 req
 
 {
