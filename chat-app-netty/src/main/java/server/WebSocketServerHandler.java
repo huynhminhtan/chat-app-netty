@@ -10,10 +10,9 @@ import org.jboss.netty.handler.codec.http.HttpHeaders;
 import org.jboss.netty.handler.codec.http.HttpRequest;
 import org.jboss.netty.handler.codec.http.websocketx.*;
 import org.redisson.Redisson;
-import org.redisson.api.RMapCache;
-import org.redisson.api.RReadWriteLock;
 import org.redisson.api.RedissonClient;
 import server.api.RouterAPI;
+import server.socket.RouterSocket;
 import server.utilities.HttpHelper;
 
 import java.net.URL;
@@ -49,6 +48,13 @@ public class WebSocketServerHandler extends SimpleChannelUpstreamHandler {
 
     // channelGroupMap save Name conversation and all channels ID of users connect with conversation
     private static Map<String, ChannelGroup> channelGroupMap = new ConcurrentHashMap<String, ChannelGroup>();
+
+//   private static RMap<String, ChannelGroup> channelGroupMap = RedissonHelper.getRedisson().getMap("CHANNELGROUPMAP");
+
+
+   public WebSocketServerHandler() {
+
+   }
 
     /**
      * Process an incoming message. This could be a connection request or a web socket message.
@@ -199,62 +205,77 @@ public class WebSocketServerHandler extends SimpleChannelUpstreamHandler {
      * @param message Message text
      */
     private void handleWebSocketMessage(ChannelHandlerContext context, String message) {
-    	// Dispatch message according to logical message type
 
-    	if (message.startsWith("register:")) {
+//        System.out.println("xxxxxxxxx");
+//        System.out.println(message);
+//
+//        Gson gson = new GsonBuilder().serializeNulls().create();
+//        SocketDTO socketRequestDTO = gson.fromJson(message, SocketDTO.class);
+//
+//        System.out.println(socketRequestDTO.getMessageType());
 
-        	// Handle a registration message
-            String[] data = message.split(":");
+        RouterSocket.router(context, message, logger);
 
-            String username = data[1];
-            this.roomid = data[2];
+//
+//
+//        // Dispatch message according to logical message type
+//    	if (message.startsWith("register:")) {
+//
+//        	// Handle a registration message
+//            String[] data = message.split(":");
+//
+//            String username = data[1];
+//            this.roomid = data[2];
+//
+//            logger.info("Register " + username + ":" + roomid);
+//
+//            // if roomid not exist
+//            if (!channelGroupMap.containsKey(this.roomid)) {
+//                channelGroupMap.put(this.roomid, new DefaultChannelGroup());
+//            }
+//
+//            channelGroupMap.get(this.roomid).add(context.getChannel());
+//
+//            userNameMap.put(context.getChannel().getId(), username);
+//
+//    		logger.info("Register Event: " + username + " :" + context.getChannel().getId());
+//
+//    		context.getChannel().write(new TextWebSocketFrame("[Server] Welcome " + username + " :" + context.getChannel().getId()));
+//
+//    		broadcast(context, this.roomid, "[Server] " + username + " Connected");
+//
+//    	} else if (message.startsWith("message:")) {
+//            // Send the message to all channels, the sending channel gets an echo
+//    		String username = getUsername(context.getChannel().getId());
+//    		String userMessage = message.substring(message.indexOf(':') + 1).trim();
+//
+//            logger.info("Message: " + username + " : " + this.roomid + " : "+ userMessage);
+//
+//            // save message to redis
+//
+//            // lock only thread write data at this time
+//            RReadWriteLock rwlock = redisson.getReadWriteLock("anyRWLock");
+//
+//            rwlock.writeLock().lock();
+//
+//            RMapCache<String, String> mapCache = redisson.getMapCache(this.roomid);
+//            mapCache.setMaxSize(5);
+//            mapCache.put(username + ":" + System.currentTimeMillis(), userMessage);
+//
+//            rwlock.writeLock().unlock();
+//
+//
+//            // broadcast others channel except me (current channel)
+//            broadcast(context, this.roomid,   "messageOther:" + username + ":" + this.roomid + ":" + userMessage);
+//            context.getChannel().write(new TextWebSocketFrame("[Me] " + userMessage));
+//    	} else {
+//    		// Unknown logical message type
+//    		logger.info("Unknown Message Type: " + message);
+//            context.getChannel().write(new TextWebSocketFrame("[Server] Unknown message type!"));
+//    	}
 
-            logger.info("Register " + username + ":" + roomid);
-
-            // if roomid not exist
-            if (!channelGroupMap.containsKey(this.roomid)) {
-                channelGroupMap.put(this.roomid, new DefaultChannelGroup());
-            }
-
-            channelGroupMap.get(this.roomid).add(context.getChannel());
-
-            userNameMap.put(context.getChannel().getId(), username);
-
-    		logger.info("Register Event: " + username + " :" + context.getChannel().getId());
-
-    		context.getChannel().write(new TextWebSocketFrame("[Server] Welcome " + username + " :" + context.getChannel().getId()));
-
-    		broadcast(context, this.roomid, "[Server] " + username + " Connected");
-
-    	} else if (message.startsWith("message:")) {
-            // Send the message to all channels, the sending channel gets an echo
-    		String username = getUsername(context.getChannel().getId());
-    		String userMessage = message.substring(message.indexOf(':') + 1).trim();
-
-            logger.info("Message: " + username + " : " + this.roomid + " : "+ userMessage);
-
-            // save message to redis
-
-            // lock only thread write data at this time
-            RReadWriteLock rwlock = redisson.getReadWriteLock("anyRWLock");
-
-            rwlock.writeLock().lock();
-
-            RMapCache<String, String> mapCache = redisson.getMapCache(this.roomid);
-            mapCache.setMaxSize(5);
-            mapCache.put(username + ":" + System.currentTimeMillis(), userMessage);
-
-            rwlock.writeLock().unlock();
 
 
-            // broadcast others channel except me (current channel)
-            broadcast(context, this.roomid,   "messageOther:" + username + ":" + this.roomid + ":" + userMessage);
-            context.getChannel().write(new TextWebSocketFrame("[Me] " + userMessage));
-    	} else {
-    		// Unknown logical message type
-    		logger.info("Unknown Message Type: " + message);
-            context.getChannel().write(new TextWebSocketFrame("[Server] Unknown message type!"));
-    	}
     }
 
     /**

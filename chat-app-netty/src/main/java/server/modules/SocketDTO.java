@@ -2,7 +2,7 @@ package server.modules;
 
 import java.util.ArrayList;
 
-public class SocketRequestDTO {
+public class SocketDTO {
 
     public class SocketCreateConversation {
         public String getConversationName() {
@@ -69,4 +69,40 @@ public class SocketRequestDTO {
         private SocketCreateConversation content;
 
     }
+
+    // First request
+    public class SocketFirstRequestDTO{
+
+        public String getMessageType() {
+            return messageType;
+        }
+
+        public void setMessageType(String messageType) {
+            this.messageType = messageType;
+        }
+
+        public SocketFirstRequest getContent() {
+            return content;
+        }
+
+        public void setContent(SocketFirstRequest content) {
+            this.content = content;
+        }
+
+        private String messageType;
+        private SocketFirstRequest content;
+    }
+
+    public class SocketFirstRequest {
+        public String getUserID() {
+            return userID;
+        }
+
+        public void setUserID(String userID) {
+            this.userID = userID;
+        }
+
+        private String userID;
+    }
+
 }

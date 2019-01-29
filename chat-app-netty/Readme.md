@@ -64,3 +64,48 @@ re
 [{"userName":"mtSiniChi","phone":"0999888771"},{"userName":"mtSiniChi","phone":"0999888775"}]
 
 ```
+
+## Socket
+
+### First request
+
+```
+req
+
+{
+	messageType: "firstRequest",
+	content: {
+		userID: "1119899332"
+	}
+}
+
+```
+
+### Create conversation
+
+```
+req
+
+{
+    messageType: "createConversation",
+    content: {
+        conversationName: "Class 12A",
+        users: [
+            "0999899882",
+            "0999899112",
+            "0999899332"
+        ]
+    }
+}
+
+re
+
+{
+   "messageType":"createConversation",
+   "content":{
+      "conversationID":"1548733330",
+      "conversationName":"Class 12A"
+   }
+}
+
+```

@@ -7,6 +7,10 @@ import org.redisson.api.RedissonClient;
 
 public class RedissonHelper {
 
+    public static RedissonClient getRedisson() {
+        return redisson;
+    }
+
     private static final RedissonClient redisson = Redisson.create();
 
     // RBucket
