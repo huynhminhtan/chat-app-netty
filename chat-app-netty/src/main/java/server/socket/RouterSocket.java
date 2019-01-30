@@ -13,6 +13,7 @@ import org.redisson.api.RMap;
 import server.WebSocketServer;
 import server.modules.ConversationsDTO;
 import server.modules.MessagesDTO;
+import server.modules.MessagesResponseDTO;
 import server.modules.SocketDTO;
 import server.utilities.RedissonHelper;
 import server.utilities.SocketHelper;
@@ -22,6 +23,8 @@ import java.util.ArrayList;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
+
+import static server.api.Messages.getUsernameByUserID;
 
 public class RouterSocket {
     static {
@@ -112,17 +115,26 @@ public class RouterSocket {
 
         // Get message from Redis (option)
         messagesDTO = messagesDTORMap.get(key);
+
+        MessagesResponseDTO messagesResponse = new MessagesResponseDTO(
+                messagesDTO.getSender(),
+                getUsernameByUserID(messagesDTO.getSender()),
+                messagesDTO.getContent(),
+                messagesDTO.getTime(),
+                messagesDTO.getConversationID()
+        );
+
         logger.info("GetMessage from Redis:: '" +
                 messagesDTO.getContent() + "' in " +
                 messagesDTO.getConversationID());
 
         // broadcast message to all channelID in conversationID
         SocketDTO.SendMessageResponseDTO sendMessageDTOResponse = new SocketDTO.SendMessageResponseDTO();
-        sendMessageDTOResponse.setContent(messagesDTO);
+        sendMessageDTOResponse.setContent(messagesResponse);
         sendMessageDTOResponse.setMessageType("sendMessage");
 
         String messageResponse = gson.toJson(sendMessageDTOResponse);
-        SocketHelper.broadcast(context, channelGroupMap, messagesDTO.getConversationID(), messageResponse);
+        SocketHelper.broadcast(context, channelGroupMap, messagesResponse.getConversationID(), messageResponse);
     }
 
     private static void firstRequest(ChannelHandlerContext context, String message) {

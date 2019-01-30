@@ -11,6 +11,8 @@ import org.jboss.netty.util.CharsetUtil;
 import org.redisson.api.RMap;
 import server.WebSocketServer;
 import server.modules.MessagesDTO;
+import server.modules.MessagesResponseDTO;
+import server.modules.UserDTO;
 import server.utilities.HttpHelper;
 import server.utilities.RedissonHelper;
 
@@ -43,7 +45,7 @@ public class Messages {
         logger.info("Entry get messages for conversationID: " + conversationID);
 
         // get messages by conversationID from Redis
-        ArrayList<MessagesDTO> listMessages = new ArrayList<>();
+        ArrayList<MessagesResponseDTO> listMessages = new ArrayList<>();
         messagesDTORMap = RedissonHelper.getRedisson().getMap(conversationID);
 
         Set<Map.Entry<String, MessagesDTO>> allEntries = messagesDTORMap.readAllEntrySet();
@@ -52,7 +54,14 @@ public class Messages {
 //            String key = entry.getKey();
             MessagesDTO message = entry.getValue();
 
-            listMessages.add(message);
+            listMessages.add(new MessagesResponseDTO(
+                            message.getSender(),
+                            getUsernameByUserID(message.getSender()),
+                            message.getContent(),
+                            message.getTime(),
+                            message.getConversationID()
+                    )
+            );
         }
 
         logger.info("Size of list messages by conversationID: " + listMessages.size());
@@ -71,5 +80,21 @@ public class Messages {
     private static void init() {
         URL u = WebSocketServer.class.getClassLoader().getResource("./log4j.xml");
         DOMConfigurator.configure(u);
+    }
+
+    public static String getUsernameByUserID(String userID) {
+        RMap<String, UserDTO> userDTORMap = RedissonHelper.getRedisson().getMap("USERS");
+
+        Set<Map.Entry<String, UserDTO>> allEntries = userDTORMap.readAllEntrySet();
+
+        for (Map.Entry<String, UserDTO> entry : allEntries) {
+            String key = entry.getKey();
+            UserDTO user = entry.getValue();
+
+            if (key.equals(userID))
+                return user.getUserName();
+        }
+
+        return "Unknown";
     }
 }

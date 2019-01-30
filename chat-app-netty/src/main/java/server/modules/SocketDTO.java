@@ -223,16 +223,18 @@ public class SocketDTO {
             this.messageType = messageType;
         }
 
-        public MessagesDTO getContent() {
+
+        private String messageType;
+
+        public MessagesResponseDTO getContent() {
             return content;
         }
 
-        public void setContent(MessagesDTO content) {
+        public void setContent(MessagesResponseDTO content) {
             this.content = content;
         }
 
-        private String messageType;
-        private MessagesDTO content;
+        private MessagesResponseDTO content;
     }
 
 }

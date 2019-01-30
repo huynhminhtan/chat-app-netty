@@ -90,20 +90,16 @@ re
 
 [
    {
-      "sender":"09998911112",
-      "content":"Mot ngay hanh phuc som mai",
-      "time":"1548761249",
+      "senderID":"0999899111112",
+      "senderName":"mtSiniChi",
+      "content": "Mot ngay hanh phuc som mai",
+      "time":"1548763063",
       "conversationID":"1548761179"
    },
    {
-      "sender":"22238991223114",
+      "senderID":"0223299111888",
+      "senderName":"Unknown",
       "content":"Anh nang chua chan",
-      "time":"1548761897",
-      "conversationID":"1548761179"
-   },
-   {
-      "sender":"0999899111112",
-      "content":"Long ta da tan",
       "time":"1548762247",
       "conversationID":"1548761179"
    }
@@ -185,8 +181,8 @@ req
 {
     messageType: "sendMessage",
     content: {
-        sender: "0999899111112",
-        content: "Hello world x",
+        sender: "0999888771",
+        content: "Hoan hoan trong nang",
         conversationID: "1548761179"
     }
 }
@@ -196,9 +192,10 @@ re
 {
    "messageType":"sendMessage",
    "content":{
-      "sender":"099911112",
-      "content":"Hello world",
-      "time":"1548762247",
+      "senderID":"0999888771",
+      "senderName":"mtSiniChi",
+      "content":"Hoan hoan trong nang",
+      "time":"1548821904",
       "conversationID":"1548761179"
    }
 }

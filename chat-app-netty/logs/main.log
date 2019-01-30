@@ -21909,3 +21909,103 @@ Caused by: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot
 2019-01-29 18:57:58,950 +0700 [New I/O  worker #3] INFO  (Messages.java:58) - Size of list messages by conversationID: 6
 2019-01-29 18:57:58,952 +0700 [New I/O  worker #3] INFO  (Messages.java:63) - Response list messages to channelID: [id: 0x7def130c, /0:0:0:0:0:0:0:1:59444 => /0:0:0:0:0:0:0:1:6898]
 2019-01-29 18:58:53,320 +0700 [main] INFO  (WebSocketServer.java:36) - Netty web socket server started at port 6898!
+2019-01-30 10:12:14,350 +0700 [main] INFO  (WebSocketServer.java:36) - Netty web socket server started at port 6898!
+2019-01-30 10:20:38,686 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:56) - Socket Router
+2019-01-30 10:20:38,686 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:57) - MessageType: firstRequest
+2019-01-30 10:20:38,687 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:137) - UserID: 09998991112 is first request
+2019-01-30 10:20:38,688 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:218) - UserID: 09998991112 is save to online
+2019-01-30 10:20:38,689 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:151) - Entry load all converstaions of UserID: 09998991112
+2019-01-30 10:20:39,014 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:168) - UserID: 09998991112 have conversationID: 1548746258
+2019-01-30 10:20:39,015 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:168) - UserID: 09998991112 have conversationID: 1548747755
+2019-01-30 10:20:39,015 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:168) - UserID: 09998991112 have conversationID: 1548745139
+2019-01-30 10:20:39,015 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:168) - UserID: 09998991112 have conversationID: 1548747714
+2019-01-30 10:20:39,015 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:168) - UserID: 09998991112 have conversationID: 1548747774
+2019-01-30 10:20:39,016 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:168) - UserID: 09998991112 have conversationID: 1548747815
+2019-01-30 10:20:39,016 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:168) - UserID: 09998991112 have conversationID: 1548761179
+2019-01-30 10:20:39,016 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:168) - UserID: 09998991112 have conversationID: 1548745226
+2019-01-30 10:20:39,016 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:168) - UserID: 09998991112 have conversationID: 1548747664
+2019-01-30 10:20:39,017 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:187) - Size converstaions of UserID: 9
+2019-01-30 10:21:21,009 +0700 [New I/O  worker #2] INFO  (Messages.java:36) - Handle api: /loadMessagesByConversationID
+2019-01-30 10:21:21,011 +0700 [New I/O  worker #2] INFO  (Messages.java:43) - Entry get messages for conversationID: 1548761179
+2019-01-30 10:21:21,015 +0700 [New I/O  worker #2] INFO  (Messages.java:58) - Size of list messages by conversationID: 6
+2019-01-30 10:21:21,017 +0700 [New I/O  worker #2] INFO  (Messages.java:63) - Response list messages to channelID: 307730512
+2019-01-30 10:43:59,262 +0700 [New I/O  worker #3] INFO  (Messages.java:36) - Handle api: /loadMessagesByConversationID
+2019-01-30 10:43:59,263 +0700 [New I/O  worker #3] INFO  (Messages.java:43) - Entry get messages for conversationID: 1548761179
+2019-01-30 10:43:59,267 +0700 [New I/O  worker #3] INFO  (Messages.java:58) - Size of list messages by conversationID: 6
+2019-01-30 10:43:59,269 +0700 [New I/O  worker #3] INFO  (Messages.java:63) - Response list messages to channelID: 1477889487
+2019-01-30 10:44:10,227 +0700 [New I/O  worker #4] INFO  (Messages.java:36) - Handle api: /loadMessagesByConversationID
+2019-01-30 10:44:10,227 +0700 [New I/O  worker #4] INFO  (Messages.java:43) - Entry get messages for conversationID: 1548761179
+2019-01-30 10:44:10,231 +0700 [New I/O  worker #4] INFO  (Messages.java:58) - Size of list messages by conversationID: 6
+2019-01-30 10:44:10,232 +0700 [New I/O  worker #4] INFO  (Messages.java:63) - Response list messages to channelID: 517382936
+2019-01-30 11:04:41,076 +0700 [main] INFO  (WebSocketServer.java:36) - Netty web socket server started at port 6898!
+2019-01-30 11:04:50,425 +0700 [New I/O  worker #1] INFO  (Messages.java:38) - Handle api: /loadMessagesByConversationID
+2019-01-30 11:04:50,429 +0700 [New I/O  worker #1] INFO  (Messages.java:45) - Entry get messages for conversationID: 1548761179
+2019-01-30 11:04:50,623 +0700 [New I/O  worker #1] INFO  (Messages.java:67) - Size of list messages by conversationID: 6
+2019-01-30 11:04:50,642 +0700 [New I/O  worker #1] INFO  (Messages.java:72) - Response list messages to channelID: 500348844
+2019-01-30 11:07:50,486 +0700 [main] INFO  (WebSocketServer.java:36) - Netty web socket server started at port 6898!
+2019-01-30 11:07:53,121 +0700 [New I/O  worker #1] INFO  (Messages.java:38) - Handle api: /loadMessagesByConversationID
+2019-01-30 11:07:53,127 +0700 [New I/O  worker #1] INFO  (Messages.java:45) - Entry get messages for conversationID: 1548761179
+2019-01-30 11:07:53,243 +0700 [New I/O  worker #1] INFO  (Messages.java:93) - mtSiniChi
+2019-01-30 11:07:53,244 +0700 [New I/O  worker #1] INFO  (Messages.java:93) - AkissTan
+2019-01-30 11:07:53,244 +0700 [New I/O  worker #1] INFO  (Messages.java:93) - mtSiniChi
+2019-01-30 11:07:53,247 +0700 [New I/O  worker #1] INFO  (Messages.java:93) - mtSiniChi
+2019-01-30 11:07:53,248 +0700 [New I/O  worker #1] INFO  (Messages.java:93) - AkissTan
+2019-01-30 11:07:53,248 +0700 [New I/O  worker #1] INFO  (Messages.java:93) - mtSiniChi
+2019-01-30 11:07:53,251 +0700 [New I/O  worker #1] INFO  (Messages.java:93) - mtSiniChi
+2019-01-30 11:07:53,251 +0700 [New I/O  worker #1] INFO  (Messages.java:93) - AkissTan
+2019-01-30 11:07:53,251 +0700 [New I/O  worker #1] INFO  (Messages.java:93) - mtSiniChi
+2019-01-30 11:07:53,253 +0700 [New I/O  worker #1] INFO  (Messages.java:93) - mtSiniChi
+2019-01-30 11:07:53,254 +0700 [New I/O  worker #1] INFO  (Messages.java:93) - AkissTan
+2019-01-30 11:07:53,254 +0700 [New I/O  worker #1] INFO  (Messages.java:93) - mtSiniChi
+2019-01-30 11:07:53,256 +0700 [New I/O  worker #1] INFO  (Messages.java:93) - mtSiniChi
+2019-01-30 11:07:53,258 +0700 [New I/O  worker #1] INFO  (Messages.java:93) - AkissTan
+2019-01-30 11:07:53,258 +0700 [New I/O  worker #1] INFO  (Messages.java:93) - mtSiniChi
+2019-01-30 11:07:53,260 +0700 [New I/O  worker #1] INFO  (Messages.java:93) - mtSiniChi
+2019-01-30 11:07:53,261 +0700 [New I/O  worker #1] INFO  (Messages.java:93) - AkissTan
+2019-01-30 11:07:53,261 +0700 [New I/O  worker #1] INFO  (Messages.java:93) - mtSiniChi
+2019-01-30 11:07:53,261 +0700 [New I/O  worker #1] INFO  (Messages.java:67) - Size of list messages by conversationID: 6
+2019-01-30 11:07:53,341 +0700 [New I/O  worker #1] INFO  (Messages.java:72) - Response list messages to channelID: 500348844
+2019-01-30 11:16:30,862 +0700 [main] INFO  (WebSocketServer.java:36) - Netty web socket server started at port 6898!
+2019-01-30 11:17:06,424 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:59) - Socket Router
+2019-01-30 11:17:06,424 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:60) - MessageType: firstRequest
+2019-01-30 11:17:06,425 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:149) - UserID: 09998991112 is first request
+2019-01-30 11:17:06,426 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:230) - UserID: 09998991112 is save to online
+2019-01-30 11:17:06,426 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:163) - Entry load all converstaions of UserID: 09998991112
+2019-01-30 11:17:06,533 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:180) - UserID: 09998991112 have conversationID: 1548746258
+2019-01-30 11:17:06,533 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:180) - UserID: 09998991112 have conversationID: 1548747755
+2019-01-30 11:17:06,533 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:180) - UserID: 09998991112 have conversationID: 1548745139
+2019-01-30 11:17:06,534 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:180) - UserID: 09998991112 have conversationID: 1548747714
+2019-01-30 11:17:06,534 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:180) - UserID: 09998991112 have conversationID: 1548747774
+2019-01-30 11:17:06,534 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:180) - UserID: 09998991112 have conversationID: 1548747815
+2019-01-30 11:17:06,535 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:180) - UserID: 09998991112 have conversationID: 1548761179
+2019-01-30 11:17:06,535 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:180) - UserID: 09998991112 have conversationID: 1548745226
+2019-01-30 11:17:06,535 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:180) - UserID: 09998991112 have conversationID: 1548747664
+2019-01-30 11:17:06,535 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:199) - Size converstaions of UserID: 9
+2019-01-30 11:17:10,598 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:59) - Socket Router
+2019-01-30 11:17:10,599 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:60) - MessageType: sendMessage
+2019-01-30 11:17:10,602 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:92) - SendMessage:: UserID: 0999899111112 send message: Hoan hoan trong nang in conversationID: 1548761179
+2019-01-30 11:17:10,642 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:113) - SaveMessage:: 'Hoan hoan trong nang' to Redis
+2019-01-30 11:17:10,654 +0700 [New I/O  worker #1] INFO  (RouterSocket.java:127) - GetMessage from Redis:: 'Hoan hoan trong nang' in 1548761179
+2019-01-30 11:17:10,657 +0700 [New I/O  worker #1] INFO  (SocketHelper.java:41) - BroadcastMessage to ConversationID: 1548761179
+2019-01-30 11:18:22,117 +0700 [New I/O  worker #1] INFO  (WebSocketServerHandler.java:186) - Disconnected: Unregistered User
+2019-01-30 11:18:23,116 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:59) - Socket Router
+2019-01-30 11:18:23,118 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:60) - MessageType: firstRequest
+2019-01-30 11:18:23,119 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:149) - UserID: 09998991112 is first request
+2019-01-30 11:18:23,120 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:230) - UserID: 09998991112 is save to online
+2019-01-30 11:18:23,122 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:163) - Entry load all converstaions of UserID: 09998991112
+2019-01-30 11:18:23,156 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:180) - UserID: 09998991112 have conversationID: 1548746258
+2019-01-30 11:18:23,157 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:180) - UserID: 09998991112 have conversationID: 1548747755
+2019-01-30 11:18:23,158 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:180) - UserID: 09998991112 have conversationID: 1548745139
+2019-01-30 11:18:23,158 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:180) - UserID: 09998991112 have conversationID: 1548747714
+2019-01-30 11:18:23,159 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:180) - UserID: 09998991112 have conversationID: 1548747774
+2019-01-30 11:18:23,160 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:180) - UserID: 09998991112 have conversationID: 1548747815
+2019-01-30 11:18:23,161 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:180) - UserID: 09998991112 have conversationID: 1548761179
+2019-01-30 11:18:23,162 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:180) - UserID: 09998991112 have conversationID: 1548745226
+2019-01-30 11:18:23,163 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:180) - UserID: 09998991112 have conversationID: 1548747664
+2019-01-30 11:18:23,164 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:199) - Size converstaions of UserID: 9
+2019-01-30 11:18:24,438 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:59) - Socket Router
+2019-01-30 11:18:24,439 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:60) - MessageType: sendMessage
+2019-01-30 11:18:24,440 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:92) - SendMessage:: UserID: 0999888771 send message: Hoan hoan trong nang in conversationID: 1548761179
+2019-01-30 11:18:24,453 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:113) - SaveMessage:: 'Hoan hoan trong nang' to Redis
+2019-01-30 11:18:24,466 +0700 [New I/O  worker #2] INFO  (RouterSocket.java:127) - GetMessage from Redis:: 'Hoan hoan trong nang' in 1548761179
+2019-01-30 11:18:24,468 +0700 [New I/O  worker #2] INFO  (SocketHelper.java:41) - BroadcastMessage to ConversationID: 1548761179
